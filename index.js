@@ -6,7 +6,6 @@ const mongoose = require('mongoose');
 
 mongoose.connect('mongodb://localhost:27017/teashop');
 
-const Teas = mongoose.model('Teas', { id: String, name: String, basePrice: Number, funcionalidad: String, descripcion: String, stock: Number, sabor: String, aroma: String, image: String });
 const User = mongoose.model('User', { nombre: String, apellido: String, email: String, direccion: String, localidad: String, provincia: String, cp: String, telefono: String, password: String });
 
 
@@ -129,6 +128,11 @@ app.get('/api/logout', function (req, res) {
     req.logout();
     res.send({ mensaje: 'desconectado' });
 });
+
+
+const adminRouter = require('./admin-router');
+
+app.use('/api/admin',adminRouter);
 
 app.listen(3001, function () {
     console.log('servidor en marcha');
