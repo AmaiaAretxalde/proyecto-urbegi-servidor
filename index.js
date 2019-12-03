@@ -83,7 +83,7 @@ app.post('/api/usuario/registro', function (req, res) {
             res.send({ mensaje: 'Error en el registro. Email ' + email + ' ya registrado. Elija otro, por favor.' });
         } else {
             user.save();
-            res.send({ mensaje: 'Usuario registrado correctamente' });
+            res.send({ mensaje: 'Usuario registrado correctamente'});
         }
     });
 });
@@ -102,7 +102,22 @@ app.get('/api/usuario', function (req, res) {
     if (req.isAuthenticated() === false) {
         return res.send({ mensaje: 'denegado' });
     }
-    res.send({ mensaje: 'acceso correcto' });
+    res.send({ mensaje: 'acceso correcto'});
+});
+
+//OBTENER NOMBRE USUARIO LOGUEADO:
+app.post('/api/usuario/nombre', function (req, res) {
+    let email = req.body.email;
+    // let nombre='';
+    User.find({ email: email }, function (err, datos) {
+        if (err !== null) {
+            res.send({ mensaje: '404' });
+            return;
+        }
+        if (datos.length !== 0) {
+            res.send({ nombre:datos[0].nombre});
+        } 
+    });
 });
 
 
