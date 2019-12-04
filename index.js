@@ -132,8 +132,10 @@ app.get('/api/logout', function (req, res) {
 
 
 const adminRouter = require('./admin-router');
+const listadoRouter = require('./listado-router');
 
 app.use('/api/admin', adminRouter);
+app.use('/api/listado', listadoRouter);
 
 
 
