@@ -133,10 +133,17 @@ app.get('/api/logout', function (req, res) {
 
 
 const adminRouter = require('./admin-router');
-const listadoRouter = require('./listado-router');
+
 
 app.use('/api/admin', adminRouter);
-app.use('/api/listado', listadoRouter);
+
+
+let tes = teas.map(function (te) {
+    return new Tea(te);
+});
+console.log(tes);
+Tea.insertMany(tes);
+
 
 
 
