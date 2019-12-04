@@ -3,12 +3,10 @@ const app = express();
 const bcrypt = require('bcrypt');
 const mongoose = require('mongoose');
 const Tea = require('./models/Tea')
+const User = require('./models/User')
 
 
 mongoose.connect('mongodb://localhost:27017/teashop');
-
-const User = mongoose.model('User', { nombre: String, apellido: String, email: String, direccion: String, localidad: String, provincia: String, cp: String, telefono: String, password: String });
-
 
 app.use(express.static('public'));
 app.use(express.urlencoded({ extended: false }));
@@ -121,8 +119,10 @@ app.post('/api/usuario/nombre', function (req, res) {
 });
 
 const cargarRouter = require('./cargar-router');
+const usuarioRouter = require('./cargar-router');
 
 app.use('/api/cargar', cargarRouter);
+app.use('/api/usuario', usuarioRouter);
 
 //LOGOUT
 app.get('/api/logout', function (req, res) {
