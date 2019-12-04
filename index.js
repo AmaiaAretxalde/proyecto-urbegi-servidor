@@ -706,25 +706,21 @@ let teas = [{
     "descripcion": "De la provincia de Fujian, es uno de los tés Oolong más apreciados en China.",
     "name": "Té Oolong (azul) Tie Kuan Yin",
     "longDescription": [],
-    "caracteristicas": [{
+    "caracteristicas": {
         "Aroma": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/aroma.svg",
             "texto": "Dulce, floral y tostado."
-        }
-    },
-    {
+        },
         "Sabor": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/sabor.svg",
             "texto": "Dulce, cereal tostado"
-        }
-    },
-    {
+        },
         "Color": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/color.svg",
             "texto": "Caramelo claro"
         }
-    }
-    ],
+    },
+    
     "stock": 235,
     "basePrice": 8.95
 },
