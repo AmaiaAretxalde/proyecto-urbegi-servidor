@@ -2,11 +2,11 @@ const express = require('express');
 const app = express();
 const bcrypt = require('bcrypt');
 const mongoose = require('mongoose');
+const Tea = require('./models/Tea')
 
 
 mongoose.connect('mongodb://localhost:27017/teashop');
 
-const Teas = mongoose.model('Teas', { id: String, name: String, basePrice: Number, funcionalidad: String, descripcion: String, stock: Number, sabor: String, aroma: String, image: String });
 const User = mongoose.model('User', { nombre: String, apellido: String, email: String, direccion: String, localidad: String, provincia: String, cp: String, telefono: String, password: String });
 
 
@@ -61,18 +61,6 @@ passport.deserializeUser(function (id, done) {
     });
 });
 
-let db;
-
-const Tea = mongoose.model('tea', {
-    mainImage: String,
-    categoria: String,
-    descripcion: String,
-    name: String,
-    longDescription: Array,
-    caracteristicas: [{ Aroma: { image: String, texto: String } }, { Sabor: { image: String, texto: String } }, { Color: { image: String, texto: String } }],
-    stock: Number,
-    basePrice: Number
-})
 
 //REGISTRO DE NUEVOS USUARIOS:
 app.post('/api/usuario/registro', function (req, res) {
@@ -133,12 +121,26 @@ app.post('/api/usuario/nombre', function (req, res) {
     });
 });
 
+const cargarRouter = require('./cargar-router');
+
+app.use('/api/cargar', cargarRouter);
 
 //LOGOUT
 app.get('/api/logout', function (req, res) {
     req.logout();
     res.send({ mensaje: 'desconectado' });
 });
+
+
+const adminRouter = require('./admin-router');
+const listadoRouter = require('./listado-router');
+
+app.use('/api/admin', adminRouter);
+app.use('/api/listado', listadoRouter);
+
+
+
+
 
 app.listen(3001, function () {
     console.log('servidor en marcha');
