@@ -119,7 +119,7 @@ app.post('/api/usuario/nombre', function (req, res) {
 });
 
 const cargarRouter = require('./cargar-router');
-const usuarioRouter = require('./cargar-router');
+const usuarioRouter = require('./usuario-router');
 
 app.use('/api/cargar', cargarRouter);
 app.use('/api/usuario', usuarioRouter);
