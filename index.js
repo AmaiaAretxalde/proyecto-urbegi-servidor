@@ -139,8 +139,6 @@ app.use('/api/admin', adminRouter);
 
 
 
-
-
 app.listen(3001, function () {
     console.log('servidor en marcha');
 });
