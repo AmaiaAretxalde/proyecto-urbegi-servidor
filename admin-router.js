@@ -2,9 +2,8 @@ const router = require('express').Router();
 const Tea = require('./models/Tea')
 
 router.post('/teas', async function(req,res){
-
-    let  = req.body;
-    let tea = new Tea (datos);
+  let  = req.body;
+  let tea = new Tea (datos); 
     await tea.save();
     res.send('producto añadido');
   })
