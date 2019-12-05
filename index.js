@@ -138,7 +138,7 @@ const adminRouter = require('./admin-router');
 app.use('/api/admin', adminRouter);
 
 
-//CESTA 
+// VER CESTA 
 app.get('/api/cesta',function (req, res) {
     let email = req.body.email
 /*const user = req.user
@@ -154,7 +154,7 @@ app.get('/api/cesta',function (req, res) {
     });
 });
 
-
+// PARA AÑADIR A LA CESTA
 app.post('/api/cesta', async function (req, res) {
     let email = req.body.email;
     let producto = req.body.producto;
