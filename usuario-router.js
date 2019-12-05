@@ -36,8 +36,7 @@ router.post('/registro/funciones', function (req, res) {
     });
 });
 
-router.get('/gustos/', function (req, res) {
-
+router.post('/gustos/', function (req, res) {
     let email = req.body.email;
     User.find({ email: email }, function (err, datos) {
         if (err !== null) {
@@ -45,9 +44,10 @@ router.get('/gustos/', function (req, res) {
             return;
         }
         if ( datos===null || datos.length === 0) {
-            res.send({ mensaje: 'Tus gustos no están registrados' });
+            res.send({ mensaje: 'No estás registrado' });
         } else {
-            res.send({ mensaje: 'Tus funciones preferidas se han registrado correctamente' });
+
+            res.send(datos );
         }
     });
 });
