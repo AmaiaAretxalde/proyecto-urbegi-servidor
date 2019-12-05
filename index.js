@@ -4,6 +4,7 @@ const bcrypt = require('bcrypt');
 const mongoose = require('mongoose');
 const Tea = require('./models/Tea')
 const User = require('./models/User')
+const Tipo = require('./models/Tipo')
 
 
 mongoose.connect('mongodb://localhost:27017/teashop');
@@ -135,6 +136,7 @@ const adminRouter = require('./admin-router');
 
 
 app.use('/api/admin', adminRouter);
+
 
 
 

@@ -74,7 +74,7 @@ let teas = [
         }
     },
         "stock": 235,
-        "basePrice": 7.949999999997
+        "basePrice": 7.95
     
 },
 {
@@ -182,7 +182,7 @@ let teas = [
     },
     
     "stock": 235,
-    "basePrice": 8.50003
+    "basePrice": 8.5
 },
 {
     "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007//27020_SuperMoringaRed_1000X1000_l.jpg",
@@ -221,7 +221,7 @@ let teas = [
     
     },
     "stock": 235,
-    "basePrice": 11.949999996
+    "basePrice": 11.95
 },
 {
     "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007//75049_MatchaLatteMango_1000X1000_l.jpg",
@@ -321,7 +321,7 @@ let teas = [
     },
     
     "stock": 235,
-    "basePrice": 9.95005
+    "basePrice": 9.95
 },
 {
     "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007/fotosProducto/tes/11109_PuErhChai_1000x1000_l.jpg",
@@ -359,7 +359,7 @@ let teas = [
     },
     
     "stock": 235,
-    "basePrice": 9.95005
+    "basePrice": 9.95
 },
 {
     "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007/fotosProducto/tes/16001_1001Noches_1000x1000_l.jpg",
@@ -387,7 +387,7 @@ let teas = [
     },
     
     "stock": 235,
-    "basePrice": 7.79999
+    "basePrice": 7.8
 },
 {
     "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007//13144_GraciaBlendMatcha_1000x1000_l.jpg",
@@ -415,7 +415,7 @@ let teas = [
     },
     
     "stock": 235,
-    "basePrice": 9.40005
+    "basePrice": 9.4
 },
 {
     "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007//10049_DarjeelingFirstFlush_1000X1000_l.jpg",
@@ -495,7 +495,7 @@ let teas = [
     },
     
     "stock": 235,
-    "basePrice": 14.900000005
+    "basePrice": 14.9
 },
 {
     "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007//10137_EarlGreyCreme_1000x1000_l.jpg",
@@ -531,7 +531,7 @@ let teas = [
     },
     
     "stock": 235,
-    "basePrice": 7.95003
+    "basePrice": 7.95
 },
 {
     "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007/fotosProducto/tes/12106_SpicyStrawberry_1000x1000_l.jpg",
@@ -615,7 +615,7 @@ let teas = [
     },
     
     "stock": 235,
-    "basePrice": 9.10000003
+    "basePrice": 9.1
 },
 {
     "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007//13042_JapanBanchaSuperior_1000X1000_l.jpg",
@@ -643,7 +643,7 @@ let teas = [
     },
     
     "stock": 235,
-    "basePrice": 11.49995
+    "basePrice": 11.5
 },
 {
     "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007/fotosProducto/tes/13006_JapanGenmaicha_1000x1000_l.jpg",
@@ -671,7 +671,7 @@ let teas = [
     },
     
     "stock": 235,
-    "basePrice": 9.95005
+    "basePrice": 9.95
 },
 {
     "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007/fotosProducto/tes/13035_JapanGyokuroAsahi_1000x1000_l.jpg",
@@ -699,7 +699,7 @@ let teas = [
     },
 //NUEVO
     "stock": 235,
-    "basePrice": 18.750000005
+    "basePrice": 18.75
 },
 {
     "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007/fotosProducto/tes/28010_GoldenCake_1000x1000_l.jpg" ,
