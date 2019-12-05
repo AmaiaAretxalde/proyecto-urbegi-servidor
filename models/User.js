@@ -13,7 +13,8 @@ const User = mongoose.model('User',
         telefono: String,
         password: String,
         sabores: Array,
-        funciones: Array
+        funciones: Array,
+        cesta: Array
     });
 
 module.exports = User;
