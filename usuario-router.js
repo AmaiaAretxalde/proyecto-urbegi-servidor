@@ -36,4 +36,20 @@ router.post('/registro/funciones', function (req, res) {
     });
 });
 
+router.get('/gustos/', function (req, res) {
+
+    let email = req.body.email;
+    User.find({ email: email }, function (err, datos) {
+        if (err !== null) {
+            res.send({ mensaje: '404' });
+            return;
+        }
+        if ( datos===null || datos.length === 0) {
+            res.send({ mensaje: 'Tus gustos no están registrados' });
+        } else {
+            res.send({ mensaje: 'Tus funciones preferidas se han registrado correctamente' });
+        }
+    });
+});
+
 module.exports = router;
