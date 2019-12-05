@@ -81,7 +81,7 @@ app.post('/api/usuario/registro', function (req, res) {
             res.send({ mensaje: 'Error en el registro. Email ' + email + ' ya registrado. Elija otro, por favor.' });
         } else {
             user.save();
-            res.send({ mensaje: 'Usuario registrado correctamente' });
+            res.send({ user: user, mensaje: 'Usuario registrado correctamente' });
         }
     });
 });
