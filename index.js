@@ -60,6 +60,7 @@ passport.deserializeUser(function (id, done) {
     });
 });
 
+
 //REGISTRO DE NUEVOS USUARIOS:
 app.post('/api/usuario/registro', function (req, res) {
 
@@ -133,7 +134,6 @@ app.get('/api/logout', function (req, res) {
 
 
 const adminRouter = require('./admin-router');
-
 
 app.use('/api/admin', adminRouter);
 
