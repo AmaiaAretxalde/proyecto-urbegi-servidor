@@ -139,20 +139,18 @@ app.use('/api/admin', adminRouter);
 
 
 //CESTA 
-app.get('/api/cesta', async function (req, res) {
+app.get('/api/cesta',function (req, res) {
     let email = req.body.email
-
-    /*if (req.isAuthenticated() === false) {
+/*const user = req.user
+    if (req.isAuthenticated() === false) {
         return res.send({ mensaje: 'No estás logueado', logged: false });
     }*/
-
-    const user = req.user;
-    await User.findOne({ email:email }, function (err, usuario) {
+    User.find({ email:email }, function (err, usuario) {
         if (err !== null) {
             console.log(err);
             return;
         }
-        res.send(user);
+        res.send(usuario[0].cesta);
     });
 });
 
