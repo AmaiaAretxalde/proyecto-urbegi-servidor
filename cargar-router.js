@@ -47,6 +47,21 @@ router.get('/info/:tipo', function (req, res) {
     })
 });
 
+// OBTENER DATOS de PRODUCTO
+router.get('/producto/:id', function (req, res) {
+    let id = req.params.id;
+    console.log(id);
+    
+    Tea.find({id:id}, function (err, datos) {
+        if (err !== null) {
+            res.send({ mensaje: '404' });
+            return;
+        } else {
+            res.send(datos)
+        }
+    })
+});
+
 
 
 module.exports = router;
