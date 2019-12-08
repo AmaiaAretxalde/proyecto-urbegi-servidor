@@ -122,9 +122,14 @@ app.post('/api/usuario/nombre', function (req, res) {
 
 const cargarRouter = require('./cargar-router');
 const usuarioRouter = require('./usuario-router');
+const adminRouter = require('./admin-router');
+
+
 
 app.use('/api/cargar', cargarRouter);
 app.use('/api/usuario', usuarioRouter);
+app.use('/api/admin', adminRouter);
+
 
 //LOGOUT
 app.get('/api/logout', function (req, res) {
@@ -133,9 +138,7 @@ app.get('/api/logout', function (req, res) {
 });
 
 
-const adminRouter = require('./admin-router');
 
-app.use('/api/admin', adminRouter);
 
 
 
@@ -154,6 +157,10 @@ app.get('/api/cesta',function (req, res) {
         res.send(usuario[0].cesta);
     });
 });
+
+
+
+
 
 // PARA AÑADIR A LA CESTA
 app.post('/api/cesta', async function (req, res) {
