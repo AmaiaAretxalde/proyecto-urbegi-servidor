@@ -1,15 +1,16 @@
 const mongoose = require('mongoose');
 
 const Teas = mongoose.model('Teas', {
+    id:String,
     mainImage: String,
     categoria: String,
     descripcion: String,
     name: String,
     longDescription: Array,
     caracteristicas: {
-        Aroma: { image: String, texto: String },
-        Sabor: { image: String, texto: String },
-        Color: { image: String, texto: String }
+        aroma: { image: String, texto: String },
+        sabor: { image: String, texto: String },
+        color: { image: String, texto: String }
     },
     stock: Number,
     basePrice: Number });

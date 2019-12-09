@@ -1,5 +1,6 @@
 let teas = [
     {
+    "id":"1",
     "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007//28011_2-Sweet-Turron-1000x1000_l.jpg",
     "categoria": "Infusión",
     "descripcion": "Una navidad cargada de dulzura con el intenso sabor del turrón más clásico.",
@@ -18,15 +19,15 @@ let teas = [
         ""
     ],
     "caracteristicas": {
-        "Aroma": {
+        "aroma": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/aroma.svg",
             "texto": "Dulce especiado"
         },
-        "Sabor": {
+        "sabor": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/sabor.svg",
             "texto": "Especiado"
         },
-        "Color": {
+        "color": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/color.svg",
             "texto": "Rojo"
         }
@@ -36,6 +37,7 @@ let teas = [
     "basePrice": 9.8
 },
 {
+    "id":"2",
     "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007//10142_ChristmasTeaBlack_1000x1000_l.jpg",
     "categoria": "Té negro",
     "descripcion": "Tés negros, almendra tostada, manzana y naranja. 20 años Historia.",
@@ -60,15 +62,15 @@ let teas = [
         ""
     ],
     "caracteristicas": {
-        "Aroma": {
+        "aroma": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/aroma.svg",
             "texto": "especiado"
         },
-        "Sabor": {
+        "sabor": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/sabor.svg",
             "texto": "Mazapán especiado, sabor intenso y astringente"
         },
-        "Color": {
+        "color": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/color.svg",
             "texto": "Ámbar oscuro"
         }
@@ -78,6 +80,7 @@ let teas = [
     
 },
 {
+    "id":"3",
     "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007//11104_ChristmasTeaRed_1000x1000_l-1.jpg",
     "categoria": "Té rojo (Pu Erh)",
     "descripcion": "Té rojo Pu Erh, almendra tostada y canela",
@@ -100,15 +103,15 @@ let teas = [
         "  "
     ],
     "caracteristicas": {
-        "Aroma": {
+        "aroma": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/aroma.svg",
             "texto": "Almendra y canela como notas dominantes."
         },
-        "Sabor": {
+        "sabor": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/sabor.svg",
             "texto": "Castaño rojizo."
         },
-        "Color": {
+        "color": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/color.svg",
             "texto": "Galleta especiada, mazapán. Rotundo e intenso, sin astringencia"
         }
@@ -117,6 +120,7 @@ let teas = [
     "basePrice": 9.95
 },
 {
+    "id":"4",
     "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007//27018_Mediterraneo_1000x1000_l.jpg",
     "categoria": "Té verde",
     "descripcion": "Original mezcla a base de romero con elementos cítricos. Un contraste en boca que recuerda a los sabores del Mediterráneo.",
@@ -131,16 +135,16 @@ let teas = [
         "Ingredientes: Manzana, melisa, romero, hierbaluisa, cítricos y cáscara de cítricos, pétalos de naranjo, flores de malva "
     ],
     "caracteristicas": {
-        "Aroma": {
+        "aroma": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/aroma.svg",
             "texto": "Leves notas cítricas que dejan paso inmediatamente al intenso aroma del romero."
         },
     
-        "Sabor": {
+        "sabor": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/sabor.svg",
             "texto": "Romero, herbal. Suave nota cítrica."
         },
-        "Color": {
+        "color": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/color.svg",
             "texto": "Amarillo ámbar"
         }
@@ -150,6 +154,7 @@ let teas = [
     "basePrice": 9.8
 },
 {
+    "id":"5",
     "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007/fotosProducto/tes/27014_PolarMint_1000x1000_l.jpg",
     "categoria": "Té verde",
     "descripcion": "Combinación de mentas con semillas de escaramujo y un toque de regaliz.",
@@ -165,17 +170,17 @@ let teas = [
         ""
     ],
     "caracteristicas": {
-        "Aroma": {
+        "aroma": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/aroma.svg",
             "texto": "Mentolado, dulce y refrescante."
         },
     
-       "Sabor": {
+       "sabor": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/sabor.svg",
             "texto": "Menta dulce, balsámico y refrescante. Fondo dulce (regaliz)."
         },
     
-        "Color": {
+        "color": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/color.svg",
             "texto": "Amarillo dorado."
         }
@@ -185,6 +190,7 @@ let teas = [
     "basePrice": 8.5
 },
 {
+    "id":"6",
     "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007//27020_SuperMoringaRed_1000X1000_l.jpg",
     "categoria": "Té rojo",
     "descripcion": "Infusión de moringa y rooibos  con hibisco blanco, manzana y trozos de fresa",
@@ -204,17 +210,17 @@ let teas = [
         ""
     ],
     "caracteristicas": {
-        "Aroma": {
+        "aroma": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/aroma.svg",
             "texto": "Afrutado"
         },
-        "Sabor": {
+        "sabor": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/sabor.svg",
             "texto": "Con toque de fresa"
         },
     
     
-        "Color": {
+        "color": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/color.svg",
             "texto": "Amarillo"
         }
@@ -224,27 +230,29 @@ let teas = [
     "basePrice": 11.95
 },
 {
+    "id":"7",
     "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007//75049_MatchaLatteMango_1000X1000_l.jpg",
     "categoria": "Té matcha",
     "descripcion": "Té verde molido con aroma de mango lleno de antioxidantes. Perfecto para crear tus smoothies y elaborar repostería. ",
     "name": "Matcha Latte Mango",
     "longDescription": [
-        "Peso neto 30g."
+        "Peso neto 30g.",
+        "Té verde molido con aroma de mango lleno de antioxidantes. Perfecto para crear tus smoothies y elaborar repostería. "
     ],
     "caracteristicas": {
-        "Aroma": {
+        "aroma": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/aroma.svg",
             "texto": "Aromático, herbal y frutal"
         },
     
     
-        "Sabor": {
+        "sabor": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/sabor.svg",
             "texto": "Herbal y frutal"
         },
     
     
-        "Color": {
+        "color": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/color.svg",
             "texto": "Verde"
         }
@@ -254,6 +262,7 @@ let teas = [
     "basePrice": 7.5
 },
 {
+    "id":"8",
     "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007//75086_OrganicMiracleMatcha30gr_21000X1000_l.jpg",
     "categoria": "Té matcha",
     "descripcion": "Té verde Matcha orgánico, muy exclusivo y de gran calidad",
@@ -268,19 +277,19 @@ let teas = [
         ""
     ],
     "caracteristicas": {
-        "Aroma": {
+        "aroma": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/aroma.svg",
             "texto": "fresco herbal"
         },
     
     
-        "Sabor": {
+        "sabor": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/sabor.svg",
             "texto": "fresco herbal"
         },
     
 
-        "Color": {
+        "color": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/color.svg",
             "texto": "Verde"
         }
@@ -290,6 +299,7 @@ let teas = [
     "basePrice": 7.5
 },
 {
+    "id":"9",
     "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007/fotosProducto/tes/11114_Praline_1000x1000_l.jpg",
     "categoria": "Té rojo (Pu Erh)",
     "descripcion": "Delicioso Té rojo,mezcla de Pu Erh Tea, con avellanas picadas y tostadas, algarroba, manzana, canela, crocanti (azucar, avellanas), chicoria, pie de gato amarillo y aromas de avellana, caramelo, nata o vanilla",
@@ -302,19 +312,19 @@ let teas = [
         ""
     ],
     "caracteristicas": {
-        "Aroma": {
+        "aroma": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/aroma.svg",
             "texto": "Dulce y “achocolatado”"
         },
     
     
-        "Sabor": {
+        "sabor": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/sabor.svg",
             "texto": "Dulce. Praliné."
         },
     
     
-        "Color": {
+        "color": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/color.svg",
             "texto": "Castaño rojizo"
         }
@@ -324,6 +334,7 @@ let teas = [
     "basePrice": 9.95
 },
 {
+    "id":"10",
     "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007/fotosProducto/tes/11109_PuErhChai_1000x1000_l.jpg",
     "categoria": "Té rojo (Pu Erh)",
     "descripcion": "La mezcla de Té Rojo Chai perfecta para perder peso",
@@ -340,19 +351,19 @@ let teas = [
         "BENEFICIOS: No contiene alérgenos."
     ],
     "caracteristicas": {
-        "Aroma": {
+        "aroma": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/aroma.svg",
             "texto": "Especiado, nota picante."
         },
     
     
-        "Sabor": {
+        "sabor": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/sabor.svg",
             "texto": "Predominan las especias. Toque terroso muy matizado."
         },
     
 
-        "Color": {
+        "color": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/color.svg",
             "texto": "Marrón rojizo, oscuro."
         }
@@ -362,25 +373,26 @@ let teas = [
     "basePrice": 9.95
 },
 {
+    "id":"11",
     "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007/fotosProducto/tes/16001_1001Noches_1000x1000_l.jpg",
     "categoria": "Té verde",
     "descripcion": "Ideal combinación de Té Negro y Té Verde con flores de jazmín.",
     "name": "Té verde 1001 Noches",
-    "longDescription": [],
+    "longDescription": ["Ideal combinación de Té Negro y Té Verde con flores de jazmín."],
     "caracteristicas": {
-        "Aroma": {
+        "aroma": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/aroma.svg",
             "texto": "afrutado, con recuerdo a melocotón maduro."
         },
     
     
-        "Sabor": {
+        "sabor": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/sabor.svg",
             "texto": "afrutado y muy perfumado."
         },
     
     
-        "Color": {
+        "color": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/color.svg",
             "texto": "anaranjado brillante"
         }
@@ -390,25 +402,26 @@ let teas = [
     "basePrice": 7.8
 },
 {
+    "id":"12",
     "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007//13144_GraciaBlendMatcha_1000x1000_l.jpg",
     "categoria": "Té verde",
     "descripcion": "",
     "name": "Té verde Matcha Gracia Blend Green",
     "longDescription": [],
     "caracteristicas": {
-        "Aroma": {
+        "aroma": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/aroma.svg",
             "texto": "Frutal, dulce"
         },
     
     
-        "Sabor": {
+        "sabor": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/sabor.svg",
             "texto": "Amarillo verdoso"
         },
     
     
-        "Color": {
+        "color": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/color.svg",
             "texto": "Dulce y afrutado, con retrogusto cítrico de la naranja"
         }
@@ -418,6 +431,7 @@ let teas = [
     "basePrice": 9.4
 },
 {
+    "id":"13",
     "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007//10049_DarjeelingFirstFlush_1000X1000_l.jpg",
     "categoria": "Té negro",
     "descripcion": "Té negro First Flush del jardín Teesta Valley and Gielle (Darjeeling)",
@@ -435,19 +449,19 @@ let teas = [
         ""
     ],
     "caracteristicas": {
-        "Aroma": {
+        "aroma": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/aroma.svg",
             "texto": "Con pequeño toque herbal"
         },
     
     
-        "Sabor": {
+        "sabor": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/sabor.svg",
             "texto": "Ligero y sedoso con pequeño toque herbal"
         },
     
     
-        "Color": {
+        "color": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/color.svg",
             "texto": "Amarillo champagne"
         }
@@ -457,6 +471,7 @@ let teas = [
     "basePrice": 15.9
 },
 {
+    "id":"14",
     "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007//10049_DarjeelingFirstFlush_1000X1000_l.jpg",
     "categoria": "Té negro",
     "descripcion": "Té negro Second Flush, jardín Ringtong ",
@@ -464,10 +479,7 @@ let teas = [
     "longDescription": [
         "Ligero y sedoso con toque herbal.",
         "INGREDIENTES: Té negro second flush de Darjeeling  FUNCIONALIDAD: Energizante.  BENEFICIOS: No contiene alérgenos. ",
-        "INGREDIENTES: Té negro second flush de Darjeeling  FUNCIONALIDAD: Energizante.  BENEFICIOS: No contiene alérgenos. ",
-        "INGREDIENTES: Té negro second flush de Darjeeling  FUNCIONALIDAD: Energizante.  BENEFICIOS: No contiene alérgenos. ",
-        "",
-        "INGREDIENTES: Té negro second flush de Darjeeling",
+       
         "INGREDIENTES: Té negro second flush de Darjeeling",
         "",
         "FUNCIONALIDAD: Energizante.",
@@ -476,19 +488,19 @@ let teas = [
         ""
     ],
     "caracteristicas": {
-        "Aroma": {
+        "aroma": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/aroma.svg",
             "texto": "Con pequeño toque herbal"
         },
     
     
-        "Sabor": {
+        "sabor": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/sabor.svg",
             "texto": "Ligero y sedoso con pequeño toque herbal"
         },
     
     
-        "Color": {
+        "color": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/color.svg",
             "texto": "Amarillo con un toque amarronado oscuro"
         }
@@ -498,33 +510,31 @@ let teas = [
     "basePrice": 14.9
 },
 {
+    "id":"15",
     "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007//10137_EarlGreyCreme_1000x1000_l.jpg",
     "categoria": "Té negro",
     "descripcion": "Delicioso Earl Grey con toque de crema",
     "name": "Té negro Earl Grey Crème",
     "longDescription": [
         "Una deliciosa mezcla, Té negro con aroma de bergamota y aroma de crema, que nos envuelve dulcemente. Té energizante y estimulante con un leve toque dulce y cítrico.  INGREDIENTES: Blend de dos tés negros, aroma de crema y bergamota.",
-        "Una deliciosa mezcla, Té negro con aroma de bergamota y aroma de crema, que nos envuelve dulcemente.",
-        "Té energizante y estimulante con un leve toque dulce y cítrico.",
-        "Té energizante y estimulante con un leve toque dulce y cítrico.",
         "",
         "INGREDIENTES: Blend de dos tés negros, aroma de crema y bergamota.",
         "BENEFICIOS: No contiene alérgenos."
     ],
     "caracteristicas": {
-        "Aroma": {
+        "aroma": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/aroma.svg",
             "texto": "Dulzón. El aroma de crema se funde perfectamente con un sutil aroma de bergamota."
         },
     
     
-        "Sabor": {
+        "sabor": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/sabor.svg",
             "texto": "Crema con un leve toque cítrico. Para s golosos. Dulce sin empalagar"
         },
     
     
-        "Color": {
+        "color": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/color.svg",
             "texto": "Castaño"
         }
@@ -534,24 +544,24 @@ let teas = [
     "basePrice": 7.95
 },
 {
+    "id":"16",
     "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007/fotosProducto/tes/12106_SpicyStrawberry_1000x1000_l.jpg",
     "categoria": "Té Oolong (azul)",
     "descripcion": "Té Oolong con fresa y una exótica mezcla de especias.",
     "name": "Té Oolong (azul) Spicy Strawberry",
-    "longDescription": [],
+    "longDescription": ["Té Oolong con fresa y una exótica mezcla de especias."],
     "caracteristicas": {
-        "Aroma": {
+        "aroma": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/aroma.svg",
             "texto": "Afrutado, dulce con leve matiz especiado."
         },
     
-    
-        "Sabor": {
+        "sabor": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/sabor.svg",
             "texto": "Fresa con pinceladas de canela y clavo. Frescor del cardamomo y toque picante del jengibre."
         },
     
-        "Color": {
+        "color": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/color.svg",
             "texto": "Oro viejo"
         }
@@ -561,21 +571,22 @@ let teas = [
     "basePrice": 9.5
 },
 {
+    "id":"17",
     "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007/fotosProducto/tes/12003_TieKuanYin_1000x1000_l.jpg",
     "categoria": "Té Oolong (azul)",
     "descripcion": "De la provincia de Fujian, es uno de los tés Oolong más apreciados en China.",
     "name": "Té Oolong (azul) Tie Kuan Yin",
-    "longDescription": [],
+    "longDescription": ["De la provincia de Fujian, es uno de los tés Oolong más apreciados en China."],
     "caracteristicas": {
-        "Aroma": {
+        "aroma": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/aroma.svg",
             "texto": "Dulce, floral y tostado."
         },
-        "Sabor": {
+        "sabor": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/sabor.svg",
             "texto": "Dulce, cereal tostado"
         },
-        "Color": {
+        "color": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/color.svg",
             "texto": "Caramelo claro"
         }
@@ -585,6 +596,7 @@ let teas = [
     "basePrice": 8.95
 },
 {
+    "id":"18",
     "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007//11117_CinammonRoll_1000X1000_l.jpg",
     "categoria": "Té rojo (Pu Erh)",
     "descripcion": "Té rojo dulce y especiado con canela",
@@ -593,22 +605,22 @@ let teas = [
         "",
         "Funcionalidad: Detox",
         "",
-        "Ingredientes: Té Pu-Erh - Té con una fermentación especial,  Cáscara de cacao, Manzana , Canela, Granos de cacao, Algarroba, Cúrcuma, Aroma de canela, Pétalos de rosa roja, Pétalos de caléndula",
+        "Ingredientes: Té Pu-Erh - Té con una fermentación especial,  Cáscara de cacao, Manzana , Canela, Granos de cacao, Algarroba, Cúrcuma, aroma de canela, Pétalos de rosa roja, Pétalos de caléndula",
         ""
     ],
     "caracteristicas": {
-        "Aroma": {
+        "aroma": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/aroma.svg",
             "texto": "canela y el dulzor del cacao"
         },
     
-       "Sabor": {
+       "sabor": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/sabor.svg",
             "texto": "La terrosidad del Té rojo se funde perfectamente con el carácter dulzón y especiado de la canela y el cacao"
         },
     
     
-        "Color": {
+        "color": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/color.svg",
             "texto": "Castaño rojizo"
         }
@@ -618,25 +630,26 @@ let teas = [
     "basePrice": 9.1
 },
 {
+    "id":"19",
     "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007//13042_JapanBanchaSuperior_1000X1000_l.jpg",
     "categoria": "Té verde",
     "descripcion": "Te verde puro de Japón.",
     "name": "Té verde Japan Bancha Superior",
-    "longDescription": [],
+    "longDescription": ["Te verde puro de Japón."],
     "caracteristicas": {
-        "Aroma": {
+        "aroma": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/aroma.svg",
             "texto": "Marcadamente tropical. Dulce y fresco a la vez."
         },
     
     
-        "Sabor": {
+        "sabor": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/sabor.svg",
             "texto": "Cocktail Tropical. Toque fresco del Aloe vera y dulce del Lychee."
         },
     
     
-        "Color": {
+        "color": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/color.svg",
             "texto": "Amarillo pálido"
         }
@@ -646,25 +659,26 @@ let teas = [
     "basePrice": 11.5
 },
 {
+    "id":"20",
     "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007/fotosProducto/tes/13006_JapanGenmaicha_1000x1000_l.jpg",
     "categoria": "Té verde",
     "descripcion": "Clásico Té verde japonés con arroz tostado y maíz.",
     "name": "Té verde Japan Genmaicha",
-    "longDescription": [],
+    "longDescription": ["Clásico Té verde japonés con arroz tostado y maíz."],
     "caracteristicas": {
-        "Aroma": {
+        "aroma": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/aroma.svg",
             "texto": "Cereal tostado"
         },
     
     
-        "Sabor": {
+        "sabor": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/sabor.svg",
             "texto": "Cereal tostado, punto salado y ligeramente vegetal. Con cuerpo. Fresco."
         },
     
     
-        "Color": {
+        "color": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/color.svg",
             "texto": "Amarillo verdoso."
         }
@@ -674,25 +688,26 @@ let teas = [
     "basePrice": 9.95
 },
 {
+    "id":"21",
     "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007/fotosProducto/tes/13035_JapanGyokuroAsahi_1000x1000_l.jpg",
     "categoria": "Té verde",
     "descripcion": "Té verde Gyokuro Asahi, de recolección de primavera tardía.",
     "name": "Té verde Japan Gyokuro Asahi",
-    "longDescription": [],
+    "longDescription": ["Té verde Gyokuro Asahi, de recolección de primavera tardía."],
     "caracteristicas": {
-        "Aroma": {
+        "aroma": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/aroma.svg",
             "texto": "Sutil y dulzón rebajando un poco las notas vegetales"
         },
     
     
-        "Sabor": {
+        "sabor": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/sabor.svg",
             "texto": "Suave, sin astringencia, dulce y ligero"
         },
     
     
-        "Color": {
+        "color": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/color.svg",
             "texto": "Amarillo verdoso, denso y elegante"
         }
@@ -702,6 +717,7 @@ let teas = [
     "basePrice": 18.75
 },
 {
+    "id":"22",
     "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007/fotosProducto/tes/28010_GoldenCake_1000x1000_l.jpg" ,
     "categoria": "Infusión",
     "descripcion": "Deliciosa infusión inspirada en el embriagador aroma de un bizcocho recién hecho",
@@ -719,23 +735,24 @@ let teas = [
     ],
 
     "caracteristicas": {
-        "Aroma": {
+        "aroma": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/aroma.svg",
             "texto": "Tarta casera de manzana"
         },
-        "Sabor": {
+        "sabor": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/sabor.svg",
             "texto": "Dulce y frutal. Toque de bizcocho."
         },
-        "Color": {
+        "color": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/color.svg",
-            "texto": "Color miel"
+            "texto": "color miel"
         }
     },
     "stock": 201,
     "basePrice": 9.50
 },
 {
+    "id":"23",
     "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007//14014_snow_christmas_1000X1000.jpg" ,
     "categoria": "Té blanco",
     "descripcion": "La poesía de la Navidad: Mezcla de té blanco con mango,manzana,caramelo",
@@ -755,15 +772,15 @@ let teas = [
         ""
     ],
     "caracteristicas": {
-        "Aroma": {
+        "aroma": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/aroma.svg",
             "texto": "Dulce, cremoso"
         },
-        "Sabor": {
+        "sabor": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/sabor.svg",
             "texto": "Dulce cremoso a manzana caramelizada."
         },
-        "Color": {
+        "color": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/color.svg",
             "texto": " Oro intenso",
         }
@@ -773,6 +790,7 @@ let teas = [
     "basePrice": 16.90
 },
 {
+    "id":"24",
     "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007/fotosProducto/tes/10156_ChaiLatte_1000x1000_l.jpg" ,
     "categoria": "Té negro",
     "descripcion": "Tés negros,canela,jengibre,regaliz y toque de leche",
@@ -797,15 +815,15 @@ let teas = [
         ""
     ],
     "caracteristicas": {
-        "Aroma": {
+        "aroma": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/aroma.svg",
             "texto": "Especiado, dulce."
         },
-        "Sabor": {
+        "sabor": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/sabor.svg",
             "texto": "Especiado, cremoso."
         },
-        "Color": {
+        "color": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/color.svg",
             "texto": " Ámbar",
         }
@@ -815,6 +833,7 @@ let teas = [
     "basePrice": 7.95
 },
 {
+    "id":"25",
     "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007//NewOrientalChristmas_1000X1000_l.jpg",
     "categoria": "Té negro",
     "descripcion": "Tés negros y fruta dulce de inspiración mediterránea",
@@ -841,15 +860,15 @@ let teas = [
         ""
     ],
     "caracteristicas": {
-        "Aroma": {
+        "aroma": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/aroma.svg",
             "texto": "Dulzón."
         },
-        "Sabor": {
+        "sabor": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/sabor.svg",
             "texto": "Fondo de frutas dulces, dátil."
         },
-        "Color": {
+        "color": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/color.svg",
             "texto": "Anaranjado cobrizo",
         }
@@ -859,6 +878,7 @@ let teas = [
     "basePrice": 8.95
 },
 {
+    "id":"26",
     "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007//11118_RedCurcumaLatte_1000X1000_l.jpg",
     "categoria": "Té rojo",
     "descripcion": "Té rojo,curcuma y jengibre,una plenitud de sabores para el bienestar",
@@ -879,15 +899,15 @@ let teas = [
         ""
     ],
     "caracteristicas": {
-        "Aroma": {
+        "aroma": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/aroma.svg",
             "texto": "Cremoso y especiado"
         },
-        "Sabor": {
+        "sabor": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/sabor.svg",
             "texto": "Terroso, con cuerpo y un ligero toque a cúrcuma (especiado)."
         },
-        "Color": {
+        "color": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/color.svg",
             "texto": "Marrón, con un toque rojizo",
         }
@@ -897,6 +917,7 @@ let teas = [
     "basePrice": 10.80,
 },
 {
+    "id":"27",
     "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007/fotosProducto/tes/13037_KukichaOrganic_1000x1000_l.jpg",
     "categoria": "Té verde",
     "descripcion": "Té verde 100% orgánico con tallos y hojas,procedente de la región de Kyushu,Japón",
@@ -915,16 +936,16 @@ let teas = [
         ""
     ],
     "caracteristicas": {
-        "Aroma": {
+        "aroma": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/aroma.svg",
-            "texto": "Aroma vegetal, fresco"
+            "texto": "aroma vegetal, fresco"
         },
-        "Sabor": {
+        "sabor": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/sabor.svg",
-            "texto": "Sabor vegetal, fresco, ligero, delicadamente amargo.Envolvente.",
+            "texto": "sabor vegetal, fresco, ligero, delicadamente amargo.Envolvente.",
             
         },
-        "Color": {
+        "color": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/color.svg",
             "texto": "Amarillo pálido verdoso. Partículas en suspensión, turbio",
         }
@@ -934,6 +955,7 @@ let teas = [
     "basePrice": 20.30,
 },
 {
+    "id":"28",
     "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007//29108_ChristmasTeaRooibos_1000x1000_l.jpg" ,
     "categoria": "Infusión",
     "descripcion": "Rooibos,almendra,manzana,naranja y especias,una mezcla con todo el sabor",
@@ -958,16 +980,16 @@ let teas = [
         ""
     ],
     "caracteristicas": {
-        "Aroma": {
+        "aroma": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/aroma.svg",
             "texto": "Almendra y canela como notas dominantes"
         },
-        "Sabor": {
+        "sabor": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/sabor.svg",
             "texto": "Mazapán especiado con el toque dulzón del rooibos.",
             
         },
-        "Color": {
+        "color": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/color.svg",
             "texto": "Anaranjado intenso",
         }
@@ -977,6 +999,7 @@ let teas = [
     "basePrice": 9.50,
 },
 {
+    "id":"29",
     "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007/fotosProducto/tes/28004_AppleTemptation_1000x1000_l.jpg" ,
     "categoria": "Infusión",
     "descripcion": "Infusión de manzana al estilo de los bazares de Estambul",
@@ -1001,16 +1024,16 @@ let teas = [
         ""
     ],
     "caracteristicas": {
-        "Aroma": {
+        "aroma": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/aroma.svg",
             "texto": "Manzana"
         },
-        "Sabor": {
+        "sabor": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/sabor.svg",
             "texto": "Manzana con toque cítrico.",
             
         },
-        "Color": {
+        "color": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/color.svg",
             "texto": "Amarillo dorado.",
         }
@@ -1020,13 +1043,14 @@ let teas = [
     "basePrice": 8.50,
 },
 {
+    "id":"30",
     "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007/fotosProducto/tes/27016_CalmMoment_1000x1000_l.jpg" ,
     "categoria": "Infusión",
     "descripcion": "Tu momento de relax llega con Calm moment",
     
     "name": "Infusión calm moment",
     "longDescription": [
-        "Tu momento de relax llega con Calm Moment, una tila con melisa y una envolvente presencia de miel. Aromas que te transportarán a una nueva dimensión de relax. Versión moderna de la tradicional tila con melisa, anís y aroma de miel.",
+        "Tu momento de relax llega con Calm Moment, una tila con melisa y una envolvente presencia de miel. aromas que te transportarán a una nueva dimensión de relax. Versión moderna de la tradicional tila con melisa, anís y aroma de miel.",
         
         
         "Funcionalidad: Digestivo ",
@@ -1044,16 +1068,16 @@ let teas = [
         ""
     ],
     "caracteristicas": {
-        "Aroma": {
+        "aroma": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/aroma.svg",
             "texto": "Dulce y herbal."
         },
-        "Sabor": {
+        "sabor": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/sabor.svg",
             "texto": "Agradable sabor herbal, con predominio de la miel. Dulce",
             
         },
-        "Color": {
+        "color": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/color.svg",
             "texto": "Amarillo claro",
         }
@@ -1063,6 +1087,7 @@ let teas = [
     "basePrice": 8.50,
 },
 {
+    "id":"31",
     "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007/fotosProducto/tes/27008_CamomillaGolden_1000x1000_l.jpg" ,
     "categoria": "Infusión",
     "descripcion": "Tónica y digestiva tisana de canela,trocitos de manzana y manzanilla",
@@ -1083,16 +1108,16 @@ let teas = [
         ""
     ],
     "caracteristicas": {
-        "Aroma": {
+        "aroma": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/aroma.svg",
             "texto": "Manzana al horno."
         },
-        "Sabor": {
+        "sabor": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/sabor.svg",
             "texto": "Manzana, toque dulce de la canela. Sutil presencia de la manzanilla.",
             
         },
-        "Color": {
+        "color": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/color.svg",
             "texto": "Amarillo subido",
         }
@@ -1102,6 +1127,7 @@ let teas = [
     "basePrice": 7.95
 },
 {
+    "id":"32",
     "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007/fotosProducto/tes/28002_CocktailDeFrutas_1000x1000_l.jpg",
     "categoria": "Infusión",
     "descripcion": "Los sabores del trópico en tu taza",
@@ -1122,16 +1148,16 @@ let teas = [
         ""
     ],
     "caracteristicas": {
-        "Aroma": {
+        "aroma": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/aroma.svg",
             "texto": "Dulces frutas tropicales con el contraste ácido del hibisco."
         },
-        "Sabor": {
+        "sabor": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/sabor.svg",
             "texto": "Afrutado, toque ácido del hibisco.",
             
         },
-        "Color": {
+        "color": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/color.svg",
             "texto": "Rojo vivo",
         }
@@ -1141,6 +1167,7 @@ let teas = [
     "basePrice": 7.95
 },
 {
+    "id":"33",
     "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007//28005_CocoaOrange_1000x1000_l.jpg",
     "categoria": "Infusión",
     "descripcion": "Infusión de cáscara de cacao,jengibre y naranja",
@@ -1161,16 +1188,16 @@ let teas = [
         ""
     ],
     "caracteristicas": {
-        "Aroma": {
+        "aroma": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/aroma.svg",
             "texto": "Intenso aroma de cacao."
         },
-        "Sabor": {
+        "sabor": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/sabor.svg",
             "texto": "Combinación perfecta de cacao y naranja, con la intensidad del jengibre.",
             
         },
-        "Color": {
+        "color": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/color.svg",
             "texto": "Cognac",
         }
@@ -1180,6 +1207,7 @@ let teas = [
     "basePrice": 8.50
 },
 {
+    "id":"34",
     "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007//27021_GojiSecrets_1000X1000_l.jpg",
     "categoria": "Infusión",
     "descripcion": "Infusión de bayas de goji,hibisco,pepitas de granada y arándanos",
@@ -1200,16 +1228,16 @@ let teas = [
         ""
     ],
     "caracteristicas": {
-        "Aroma": {
+        "aroma": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/aroma.svg",
             "texto": "Afrutado"
         },
-        "Sabor": {
+        "sabor": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/sabor.svg",
             "texto": "Hibisco, afrutado",
             
         },
-        "Color": {
+        "color": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/color.svg",
             "texto": "Rosáceo",
         }
@@ -1219,6 +1247,7 @@ let teas = [
     "basePrice": 10.95,
 },
 {
+    "id":"35",
     "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007/fotosProducto/tes/27017_HerbalSpirit_1000x1000_l.jpg",
     "categoria": "Infusión",
     "descripcion": "Disfruta de todo el sabor del regaliz negro con esta delicada infusión de especias",
@@ -1240,16 +1269,16 @@ let teas = [
         ""
     ],
     "caracteristicas": {
-        "Aroma": {
+        "aroma": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/aroma.svg",
             "texto": "Balsámico. Destaca el regaliz."
         },
-        "Sabor": {
+        "sabor": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/sabor.svg",
             "texto": "El anís y la regaliz se fusionan y predominan sobre un fondo mentolado",
             
         },
-        "Color": {
+        "color": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/color.svg",
             "texto": "Dorado, brillante e intenso",
         }
@@ -1259,6 +1288,7 @@ let teas = [
     "basePrice": 9.50,
 },
 {
+    "id":"36",
     "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007/fotosProducto/tes/25002_IndianSecret_1000x1000_l.jpg",
     "categoria": "Infusión",
     "descripcion": "Infusión muy energética de corteza de naranja,hinojo y canela",
@@ -1280,16 +1310,16 @@ let teas = [
         ""
     ],
     "caracteristicas": {
-        "Aroma": {
+        "aroma": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/aroma.svg",
             "texto": "Perfume picante y especiado."
         },
-        "Sabor": {
+        "sabor": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/sabor.svg",
             "texto": "Especiado, dulce, ligeramente picante y muy perfumado",
             
         },
-        "Color": {
+        "color": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/color.svg",
             "texto": "Ambarino",
         }
@@ -1299,6 +1329,7 @@ let teas = [
     "basePrice": 9.50,
 },
 {
+    "id":"37",
     "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007/fotosProducto/tes/25001_IndianYogi_1000x1000_l.jpg",
     "categoria": "Infusión",
     "descripcion": "Mezcla yogui que se usa originalmente para recuperar el \"espíritu\" tras una sesión",
@@ -1320,16 +1351,16 @@ let teas = [
         ""
     ],
     "caracteristicas": {
-        "Aroma": {
+        "aroma": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/aroma.svg",
             "texto": "Especiado. Destacan el clavo y la canela"
         },
-        "Sabor": {
+        "sabor": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/sabor.svg",
             "texto": "Especiado, dulce (canela) y ligeramente picante",
             
         },
-        "Color": {
+        "color": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/color.svg",
             "texto": "Miel, ámbar.",
         }
@@ -1339,6 +1370,7 @@ let teas = [
     "basePrice": 8.95,
 },
 {
+    "id":"38",
     "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007/fotosProducto/tes/27009_MagicForest_1000x1000_l.jpg" ,
     "categoria": "Infusión",
     "descripcion": "Infusión con el más fresco sabor del bosque",
@@ -1360,16 +1392,16 @@ let teas = [
         ""
     ],
     "caracteristicas": {
-        "Aroma": {
+        "aroma": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/aroma.svg",
             "texto": "Frutas del bosque, ligero toque mentolado"
         },
-        "Sabor": {
+        "sabor": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/sabor.svg",
             "texto": "Delicioso contraste entre la acidez de la frambuesa , el frescor de la menta y el dulzor de la manzana",
             
         },
-        "Color": {
+        "color": {
             "image": "https://dhb3yazwboecu.cloudfront.net/1007/icons/color.svg",
             "texto": "Rosado",
         }
