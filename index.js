@@ -122,9 +122,14 @@ app.post('/api/usuario/nombre', function (req, res) {
 
 const cargarRouter = require('./cargar-router');
 const usuarioRouter = require('./usuario-router');
+const adminRouter = require('./admin-router');
+
+
 
 app.use('/api/cargar', cargarRouter);
 app.use('/api/usuario', usuarioRouter);
+app.use('/api/admin', adminRouter);
+
 
 //LOGOUT
 app.get('/api/logout', function (req, res) {
@@ -133,9 +138,7 @@ app.get('/api/logout', function (req, res) {
 });
 
 
-const adminRouter = require('./admin-router');
 
-app.use('/api/admin', adminRouter);
 
 
 
@@ -155,6 +158,10 @@ app.get('/api/cesta',function (req, res) {
     });
 });
 
+
+
+
+
 // PARA AÑADIR A LA CESTA
 app.post('/api/cesta', async function (req, res) {
     let email = req.body.email;
@@ -169,6 +176,8 @@ app.post('/api/cesta', async function (req, res) {
         res.send({mensaje:'añadido a la cesta', cesta});
     }
 });
+
+
 
 
 app.listen(3001, function () {

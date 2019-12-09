@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const User = require('./models/User');
+const Tea = require('./models/Tea');
 
 //REGISTRO DE gustos de NUEVOS USUARIOS:
 router.post('/registro/sabores', function (req, res) {
@@ -36,20 +37,24 @@ router.post('/registro/funciones', function (req, res) {
     });
 });
 
-router.post('/gustos/', function (req, res) {
-    let email = req.body.email;
-    User.find({ email: email }, function (err, datos) {
-        if (err !== null) {
-            res.send({ mensaje: '404' });
-            return;
-        }
-        if ( datos===null || datos.length === 0) {
-            res.send({ mensaje: 'No estás registrado' });
-        } else {
+// router.post('/recomendaciones', function (req, res) {
+//     let sabores = req.body.sabores;
+//     let funciones = req.body.funciones;
+//     let email = req.body.email;
+//     Tea.find({ sabores: email }, function (err, datos) {
+//         if (err !== null) {
+//             res.send({ mensaje: '404' });
+//             return;
+//         }
+//         if ( datos===null || datos.length === 0) {
+//             res.send({ mensaje: 'No estás registrado' });
+//         } else {
 
-            res.send(datos );
-        }
-    });
-});
+//             res.send(datos );
+//         }
+//     });
+// });
+
+
 
 module.exports = router;
