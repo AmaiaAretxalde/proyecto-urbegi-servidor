@@ -177,44 +177,28 @@ app.delete('/api/cesta/:id', async function (req, res) {
 
 // PARA AÑADIR A LA CESTA
 app.post('/api/cesta', async function (req, res) {
-    let producto = req.body.producto
-    let cesta = req.user.cesta;
-    const user = req.user;
     if (req.isAuthenticated() === false) {
         return res.send({ mensaje: 'No estás logueado', logged: false });
     } else {
-        User.findOneAndUpdate({ email: user.email }, { $push: { cesta: producto } });
-        res.send({ mensaje: 'añadido a la cesta', cesta });
+        let producto = req.body.producto
+        let cesta = req.user.cesta;
+        const user = req.user;
+       await User.findOneAndUpdate({ email:user.email }, {$push:{cesta:producto}});
+        res.send({mensaje:'añadido a la cesta', logged:true, cesta});
     }
 });
 
 
 // PARA AÑADIR A LA CESTA DESDE CUALQUIER TE
 app.post('/api/color/cesta', async function (req, res) {
-    let dato = req.body.dato
-    let cesta = req.user.cesta;
-    const user = req.user;
     if (req.isAuthenticated() === false) {
         return res.send({ mensaje: 'No estás logueado', logged: false });
-
     } else {
-        User.findOneAndUpdate({ email: user.email }, { $push: { cesta: dato } });
-        res.send({ mensaje: 'añadido a la cesta', cesta });
-    }
-});
-
-
-//PARA AÑADIR A LA CESTA DESDE CUALQUIER TE DESCRIPCION
-app.post('api/te/cesta', async function (req, res) {
-    const user = req.user;
-    let producto = req.body.producto;
-    let cesta = req.user.cesta;
-    if (req.isAuthenticated() === false) {
-        return res.send({ mensaje: 'No estás logueado', logged: false });
-        //res.redirect('/')
-    } else {
-        User.findOneAndUpdate({ email: user.email }, { $push: { cesta: producto } });
-        res.send({ mensaje: 'añadido a la cesta', cesta });
+        let dato = req.body.dato
+        let cesta = req.user.cesta;
+        const user = req.user;
+       await User.findOneAndUpdate({ email:user.email }, {$push:{cesta:dato}});
+        res.send({mensaje:'añadido a la cesta', logged:true, cesta});
     }
 });
 
