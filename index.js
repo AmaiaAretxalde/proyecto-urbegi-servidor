@@ -167,7 +167,9 @@ app.delete('/api/cesta/:id', async function (req, res) {
         return res.send({ mensaje: 'No estás logueado', logged: false });
     } else {
         let userDocument = await User.findById(user._id);
-        userDocument.cesta = cesta.filter(element => element._id !== id);
+        userDocument.cesta = userDocument.cesta.filter(function(element){
+            return element._id !== id;
+        } );
         userDocument.save();
         res.send({ mensaje: 'eliminado', cesta });
     }
