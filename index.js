@@ -165,45 +165,16 @@ app.get('/api/cesta',function (req, res) {
 // PARA AÑADIR A LA CESTA
 app.post('/api/cesta', async function (req, res) {
     let email = req.body.email;
-    let producto = req.body.producto;
-    
-    /*if (req.isAuthenticated() === false) {
-        return res.send({ mensaje: 'No estás logueado', logged: false });
-    } else {*/
-       await User.findOneAndUpdate({ email:email }, {cesta:{producto}});
-        res.send({mensaje:'añadido a la cesta', producto: producto});
-    }
-);
-
-app.get('/api/cesta', async function (req, res) {
-    let email = req.body.email
-
-
-    /*if (req.isAuthenticated() === false) {
-        return res.send({ mensaje: 'No estás logueado', logged: false });
-    }*/
-
+    let producto = req.body.producto
+    let cesta = req.user.cesta;
     const user = req.user;
-    await User.findOne({ email: email }, function (err, usuario) {
-        if (err !== null) {
-            console.log(err);
-            return;
-        }
-        res.send(user);
-    });
-});
-
-app.post('/api/cesta', async function (req, res) {
-    let email = req.body.email;
-    let producto = req.body.producto;
-
-    /*if (req.isAuthenticated() === false) {
+    if (req.isAuthenticated() === false) {
         return res.send({ mensaje: 'No estás logueado', logged: false });
-    } else {*/
-    await User.findOneAndUpdate({ email: email }, { cesta: { producto } });
-    res.send({ mensaje: 'añadido a la cesta', producto: producto });
-}
-);
+    } else {
+       await User.findOneAndUpdate({ email:user.email }, {$push:{ cesta:{producto:this.producto}}});
+        res.send({mensaje:'añadido a la cesta', cesta});
+    }
+});
 
 
 app.listen(3001, function () {
