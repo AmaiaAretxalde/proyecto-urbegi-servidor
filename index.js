@@ -164,7 +164,6 @@ app.get('/api/cesta',function (req, res) {
 
 // PARA AÑADIR A LA CESTA
 app.post('/api/cesta', async function (req, res) {
-    let email = req.body.email;
     let producto = req.body.producto
     let cesta = req.user.cesta;
     const user = req.user;
@@ -172,7 +171,7 @@ app.post('/api/cesta', async function (req, res) {
         return res.send({ mensaje: 'No estás logueado', logged: false });
         res.redirect('/')
     } else {
-       await User.findOneAndUpdate({ email:user.email }, {$push:{ cesta:{producto:this.producto}}});
+       await User.findOneAndUpdate({ email:user.email }, {$push:{cesta:producto}});
         res.send({mensaje:'añadido a la cesta', cesta});
     }
 });
