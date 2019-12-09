@@ -22,7 +22,7 @@ router.post('/novedades', function (req, res) {
 router.get('/teas',function(req,res){
     datos={}
     datos.msg="ok"
-    let limit=3
+    let limit=9
     let page=0
     if (req.query.limit){
         limit=parseInt(req.query.limit)
