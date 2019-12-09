@@ -17,6 +17,29 @@ router.post('/novedades', function (req, res) {
     })
 });
 
+
+// OBTENER DATOS DE TODOS LOS TE, CON PAGINACION
+router.get('/teas',function(req,res){
+    datos={}
+    datos.msg="ok"
+    let limit=3
+    let page=0
+    if (req.query.limit){
+        limit=parseInt(req.query.limit)
+    }
+    if (req.query.page){
+        page=parseInt(req.query.page)
+    }
+    Tea.find({}, function (err, datos) {
+        if (err !== null) {
+            res.send({ mensaje: '404' });
+            return;
+        } else {
+            res.send(datos)
+        }
+    }).limit(limit).skip(page*limit)
+})
+
 // OBTENER DATOS DE PRODUCTOS POR TIPO DE TÉ
 router.get('/:color', function (req, res) {
     let color = new RegExp(req.params.color);
