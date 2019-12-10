@@ -138,10 +138,6 @@ app.get('/api/logout', function (req, res) {
 });
 
 
-
-
-
-
 // VER CESTA 
 app.get('/api/cesta',function (req, res) {
     let email = req.body.email
