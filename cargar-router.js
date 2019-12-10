@@ -76,7 +76,7 @@ router.get('/producto/:id', function (req, res) {
     console.log(id);
     
     Tea.find({id:id}, function (err, datos) {
-        if (err !== null) {
+        if ((err !== null) || (datos.length===0)) {
             res.send({ mensaje: '404' });
             return;
         } else {

@@ -120,81 +120,20 @@ app.post('/api/usuario/nombre', function(req, res) {
 const cargarRouter = require('./cargar-router');
 const usuarioRouter = require('./usuario-router');
 const adminRouter = require('./admin-router');
+const cestaRouter = require('./cesta-router');
 
 
 
 app.use('/api/cargar', cargarRouter);
 app.use('/api/usuario', usuarioRouter);
 app.use('/api/admin', adminRouter);
+app.use('/api/cesta', cestaRouter);
 
 
 //LOGOUT
 app.get('/api/logout', function(req, res) {
     req.logout();
     res.send({ mensaje: 'desconectado' });
-});
-
-
-// VER CESTA 
-app.get('/api/cesta', function(req, res) {
-    let email = req.body.email
-    const user = req.user
-    if (req.isAuthenticated() === false) {
-        return res.send({ mensaje: 'No estás logueado', logged: false });
-    } else {
-        User.find({ email: user.email }, function(err, usuario) {
-            if (err !== null) {
-                console.log(err);
-                return;
-            }
-            res.send(usuario[0].cesta);
-        })
-    };
-});
-
-//ELIMINAR DE CESTA
-app.delete('/api/cesta/:id', async function(req, res) {
-    let id = req.params.id
-    const user = req.user;
-    if (req.isAuthenticated() === false) {
-        return res.send({ mensaje: 'No estás logueado', logged: false });
-    } else {
-        let userDocument = await User.findById(user._id);
-        userDocument.cesta = userDocument.cesta.filter(function(element) {
-            return element._id !== id;
-        });
-        userDocument.save();
-        res.send({ mensaje: 'eliminado', cesta });
-    }
-});
-
-
-
-// PARA AÑADIR A LA CESTA
-app.post('/api/cesta', async function(req, res) {
-    if (req.isAuthenticated() === false) {
-        return res.send({ mensaje: 'No estás logueado', logged: false });
-    } else {
-        let producto = req.body.producto
-        let cesta = req.user.cesta;
-        const user = req.user;
-        await User.findOneAndUpdate({ email: user.email }, { $push: { cesta: producto } });
-        res.send({ mensaje: 'añadido a la cesta', logged: true, cesta });
-    }
-});
-
-
-// PARA AÑADIR A LA CESTA DESDE CUALQUIER TE
-app.post('/api/color/cesta', async function(req, res) {
-    if (req.isAuthenticated() === false) {
-        return res.send({ mensaje: 'No estás logueado', logged: false });
-    } else {
-        let dato = req.body.dato
-        let cesta = req.user.cesta;
-        const user = req.user;
-        await User.findOneAndUpdate({ email: user.email }, { $push: { cesta: dato } });
-        res.send({ mensaje: 'añadido a la cesta', logged: true, cesta });
-    }
 });
 
 
