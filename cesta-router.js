@@ -37,7 +37,7 @@ router.post('/', async function (req, res) {
 
 //ELIMINAR DE CESTA
 router.delete('/:id', async function (req, res) {
-    let id = req.params.id
+    let id = req.params.id;
     const user = req.user;
     if (req.isAuthenticated() === false) {
         return res.send({ mensaje: 'No estás logueado', logged: false });
