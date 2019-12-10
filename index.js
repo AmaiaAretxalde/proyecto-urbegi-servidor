@@ -15,13 +15,11 @@ app.use(express.json());
 
 
 const session = require('express-session');
-app.use(session(
-    {
-        secret: 'jlasjdhkiusgvd',
-        resave: false,
-        saveUninitialized: false
-    }
-));
+app.use(session({
+    secret: 'jlasjdhkiusgvd',
+    resave: false,
+    saveUninitialized: false
+}));
 
 const passport = require('passport');
 app.use(passport.initialize());
@@ -30,10 +28,9 @@ app.use(passport.session());
 const LocalStrategy = require('passport-local').Strategy;
 
 passport.use(
-    new LocalStrategy(
-        { usernameField: 'email' },
-        function (email, password, done) {
-            User.find({ email: email }, function (err, usuarios) {
+    new LocalStrategy({ usernameField: 'email' },
+        function(email, password, done) {
+            User.find({ email: email }, function(err, usuarios) {
                 if (usuarios.length === 0) {
                     return done(null, false);
                 }
@@ -47,12 +44,12 @@ passport.use(
             })
         }));
 
-passport.serializeUser(function (usuario, done) {
+passport.serializeUser(function(usuario, done) {
     done(null, usuario.email);
 });
 
-passport.deserializeUser(function (id, done) {
-    User.find({ email: id }, function (err, usuarios) {
+passport.deserializeUser(function(id, done) {
+    User.find({ email: id }, function(err, usuarios) {
         if (usuarios.length === 0) {
             done(null, null);
         }
@@ -62,7 +59,7 @@ passport.deserializeUser(function (id, done) {
 
 
 //REGISTRO DE NUEVOS USUARIOS:
-app.post('/api/usuario/registro', function (req, res) {
+app.post('/api/usuario/registro', function(req, res) {
 
     let cifrado = bcrypt.hashSync(req.body.password, 10);
     let nombre = req.body.nombre;
@@ -74,7 +71,7 @@ app.post('/api/usuario/registro', function (req, res) {
     let cp = req.body.cp;
     let telefono = req.body.telefono;
     let user = new User({ nombre: nombre, apellido: apellido, email: email, direccion: direccion, localidad: localidad, provincia: provincia, cp: cp, telefono: telefono, password: cifrado });
-    User.find({ email: email }, function (err, datos) {
+    User.find({ email: email }, function(err, datos) {
         if (err !== null) {
             res.send({ mensaje: '404' });
             return;
@@ -94,11 +91,11 @@ app.post('/api/usuario/login', passport.authenticate('local', {
     failureRedirect: '/api/usuario/fail'
 }));
 
-app.get('/api/usuario/fail', function (req, res) {
+app.get('/api/usuario/fail', function(req, res) {
     res.send({ mensaje: 'denegado' })
 });
 
-app.get('/api/usuario', function (req, res) {
+app.get('/api/usuario', function(req, res) {
     if (req.isAuthenticated() === false) {
         return res.send({ mensaje: 'denegado' });
     }
@@ -106,10 +103,10 @@ app.get('/api/usuario', function (req, res) {
 });
 
 //OBTENER NOMBRE USUARIO LOGUEADO:
-app.post('/api/usuario/nombre', function (req, res) {
+app.post('/api/usuario/nombre', function(req, res) {
     let email = req.body.email;
     // let nombre='';
-    User.find({ email: email }, function (err, datos) {
+    User.find({ email: email }, function(err, datos) {
         if (err !== null) {
             res.send({ mensaje: '404' });
             return;
@@ -132,20 +129,20 @@ app.use('/api/admin', adminRouter);
 
 
 //LOGOUT
-app.get('/api/logout', function (req, res) {
+app.get('/api/logout', function(req, res) {
     req.logout();
     res.send({ mensaje: 'desconectado' });
 });
 
 
 // VER CESTA 
-app.get('/api/cesta', function (req, res) {
+app.get('/api/cesta', function(req, res) {
     let email = req.body.email
     const user = req.user
     if (req.isAuthenticated() === false) {
         return res.send({ mensaje: 'No estás logueado', logged: false });
     } else {
-        User.find({ email: user.email }, function (err, usuario) {
+        User.find({ email: user.email }, function(err, usuario) {
             if (err !== null) {
                 console.log(err);
                 return;
@@ -156,16 +153,16 @@ app.get('/api/cesta', function (req, res) {
 });
 
 //ELIMINAR DE CESTA
-app.delete('/api/cesta/:id', async function (req, res) {
+app.delete('/api/cesta/:id', async function(req, res) {
     let id = req.params.id
     const user = req.user;
     if (req.isAuthenticated() === false) {
         return res.send({ mensaje: 'No estás logueado', logged: false });
     } else {
         let userDocument = await User.findById(user._id);
-        userDocument.cesta = userDocument.cesta.filter(function(element){
+        userDocument.cesta = userDocument.cesta.filter(function(element) {
             return element._id !== id;
-        } );
+        });
         userDocument.save();
         res.send({ mensaje: 'eliminado', cesta });
     }
@@ -174,34 +171,34 @@ app.delete('/api/cesta/:id', async function (req, res) {
 
 
 // PARA AÑADIR A LA CESTA
-app.post('/api/cesta', async function (req, res) {
+app.post('/api/cesta', async function(req, res) {
     if (req.isAuthenticated() === false) {
         return res.send({ mensaje: 'No estás logueado', logged: false });
     } else {
         let producto = req.body.producto
         let cesta = req.user.cesta;
         const user = req.user;
-       await User.findOneAndUpdate({ email:user.email }, {$push:{cesta:producto}});
-        res.send({mensaje:'añadido a la cesta', logged:true, cesta});
+        await User.findOneAndUpdate({ email: user.email }, { $push: { cesta: producto } });
+        res.send({ mensaje: 'añadido a la cesta', logged: true, cesta });
     }
 });
 
 
 // PARA AÑADIR A LA CESTA DESDE CUALQUIER TE
-app.post('/api/color/cesta', async function (req, res) {
+app.post('/api/color/cesta', async function(req, res) {
     if (req.isAuthenticated() === false) {
         return res.send({ mensaje: 'No estás logueado', logged: false });
     } else {
         let dato = req.body.dato
         let cesta = req.user.cesta;
         const user = req.user;
-       await User.findOneAndUpdate({ email:user.email }, {$push:{cesta:dato}});
-        res.send({mensaje:'añadido a la cesta', logged:true, cesta});
+        await User.findOneAndUpdate({ email: user.email }, { $push: { cesta: dato } });
+        res.send({ mensaje: 'añadido a la cesta', logged: true, cesta });
     }
 });
 
 
 
-app.listen(3001, function () {
+app.listen(3001, function() {
     console.log('servidor en marcha');
 });
