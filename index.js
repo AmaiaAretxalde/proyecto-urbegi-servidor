@@ -137,6 +137,22 @@ app.get('/api/logout', function(req, res) {
 });
 
 
+//BUSCAR TE
+app.post('/api/buscar', function(req,res){
+    let buscarTe = req.body.buscarTe;
+    let busquedaTe = new RegExp(buscarTe);
+    Tea.find({$text:{$search:busquedaTe}}, function (err, datos) {
+        if (err !== null) {
+            console.log(err)
+            res.send({ mensaje: '404' });
+            return;
+        } else {
+            res.send(datos)
+        }
+    })
+    //$or:[{descripcion:buscarTe}, {name:buscarTe}, {longDescription:buscarTe}]}
+})
+
 
 app.listen(3001, function() {
     console.log('servidor en marcha');
