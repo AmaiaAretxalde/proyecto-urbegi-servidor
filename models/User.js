@@ -14,7 +14,8 @@ const User = mongoose.model('User',
         password: String,
         sabores: Array,
         funciones: Array,
-        cesta: Array
+        cesta: Array,
+        pedidos: Array
     });
 
 module.exports = User;
