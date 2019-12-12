@@ -121,13 +121,14 @@ const cargarRouter = require('./cargar-router');
 const usuarioRouter = require('./usuario-router');
 const adminRouter = require('./admin-router');
 const cestaRouter = require('./cesta-router');
-
+const buscarRouter = require('./buscar-router');
 
 
 app.use('/api/cargar', cargarRouter);
 app.use('/api/usuario', usuarioRouter);
 app.use('/api/admin', adminRouter);
 app.use('/api/cesta', cestaRouter);
+app.use('/api/buscar', buscarRouter);
 
 
 //LOGOUT
@@ -137,21 +138,6 @@ app.get('/api/logout', function(req, res) {
 });
 
 
-//BUSCAR TE
-app.post('/api/buscar', function(req,res){
-    let buscarTe = req.body.buscarTe;
-    let busquedaTe = new RegExp(buscarTe);
-    Tea.find({$text:{$search:busquedaTe}}, function (err, datos) {
-        if (err !== null) {
-            console.log(err)
-            res.send({ mensaje: '404' });
-            return;
-        } else {
-            res.send(datos)
-        }
-    })
-    //$or:[{descripcion:buscarTe}, {name:buscarTe}, {longDescription:buscarTe}]}
-})
 
 
 app.listen(3001, function() {
