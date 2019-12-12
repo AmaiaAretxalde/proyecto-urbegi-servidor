@@ -32,16 +32,56 @@ router.get('/sabores', function (req, res) {
     }
 });
 
-//OBTENER PUNTUACION SABORES DE OTROS USUARIOS:
-router.get('/sabores/resto', function (req, res) {
+//OBTENER DATOS DE OTROS USUARIOS:
+router.get('/datos/resto', function (req, res) {
+    if (req.isAuthenticated() === false) {
+        return res.send({ mensaje: 'No estás logueado', logged: false });
+    } else {
+    const user = req.user;
+    const email = user.email;
     User.find(function (err, datos) {
         if (err !== null) {
             res.send({ mensaje: '404' });
             return;
         } else {
-            res.send({ mensaje: 'Puntación de sabores enviada', respuesta: datos });
+            let posicion = datos.findIndex(function (element) {
+                console.log(element.email)
+                console.log(email)
+                return element.email === email;
+            })
+            datos.splice(posicion, 1);
+            res.send({ mensaje: 'Datos de resto de usuarios enviada', respuesta: datos });
+        }}
+    
+    )}
+});
+
+//OBTENER PUNTUACION FUNCIONES DE USUARIO logueado:
+router.get('/funciones', function (req, res) {
+    if (req.isAuthenticated() === false) {
+        return res.send({ mensaje: 'No estás logueado', logged: false });
+    } else {
+        const user = req.user;
+        let funciones = user.funciones;
+        console.log(funciones)
+        res.send({ mensaje: 'Puntación de funciones enviada', respuesta: funciones });
+    }
+});
+
+//ENCONTRAR PEDIDOS DE AMIGO:
+router.post('/recomendaciones', function (req, res) {
+    let emailAmigo = req.body.email;
+    User.findOne({ email: emailAmigo }, function (err, datos) {
+        if (err !== null) {
+            res.send({ mensaje: '404' });
+            return;
         }
-    })
+        if (datos === null || datos.length === 0) {
+            res.send({ mensaje: 'No se han encontrado datos de ese usuario' });
+        } else {
+            res.send({ mensaje: 'Se ha encontrado al usuario amigo', pedidos:datos[0].pedidos });
+        }
+    });
 });
 
 //REGISTRO DE funciones de NUEVOS USUARIOS:
