@@ -70,7 +70,7 @@ app.post('/api/usuario/registro', function(req, res) {
     let provincia = req.body.provincia;
     let cp = req.body.cp;
     let telefono = req.body.telefono;
-    let user = new User({ nombre: nombre, apellido: apellido, email: email, direccion: direccion, localidad: localidad, provincia: provincia, cp: cp, telefono: telefono, password: cifrado });
+    let user = new User({ nombre: nombre, apellido: apellido, email: email, direccion: direccion, localidad: localidad, provincia: provincia, cp: cp, telefono: telefono, password: cifrado, isAdmin: false });
     User.find({ email: email }, function(err, datos) {
         if (err !== null) {
             res.send({ mensaje: '404' });
@@ -84,6 +84,9 @@ app.post('/api/usuario/registro', function(req, res) {
         }
     });
 });
+
+
+
 
 //COMPROBAR DATOS DE ACCESO PARA USUARIOS YA REGISTRADOS:
 app.post('/api/usuario/login', passport.authenticate('local', {
