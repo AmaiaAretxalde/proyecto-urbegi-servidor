@@ -1,5 +1,7 @@
 const mongoose = require('mongoose');
 const User = require('./models/User');
+const bcrypt = require('bcrypt');
+
 
 (async function() {
     mongoose.connect('mongodb://localhost:27017/teashop');
@@ -707,6 +709,8 @@ const User = require('./models/User');
         },
     ]
     let users = usuarios.map(function(us) {
+        us.password = bcrypt.hashSync(us.nombre, 10);
+
         return new User(us);
     });
 
