@@ -71,7 +71,7 @@ router.get('/funciones', function (req, res) {
 //ENCONTRAR PEDIDOS DE AMIGO:
 router.post('/recomendaciones', function (req, res) {
     let emailAmigo = req.body.email;
-    User.findOne({ email: emailAmigo }, function (err, datos) {
+    User.find({ email: emailAmigo }, function (err, datos) {
         if (err !== null) {
             res.send({ mensaje: '404' });
             return;
