@@ -32,9 +32,9 @@ const bcrypt = require('bcrypt');
                 { "nombre": "depurativo", "puntuacion": 5 }
             ],
             "cesta": [],
-            "isAdmin": false,
+            "isAdmin": true,
 
-            "pedidos": [{ "nombre": "Infusion sweet turron" }, { "nombre": "te negro christmastea black" }, { "nombre": "te negro chai latte" }],
+            "pedidos": [],
         },
 
         {
@@ -62,11 +62,9 @@ const bcrypt = require('bcrypt');
                 { "nombre": "depurativo", "puntuacion": 1 }
             ],
             "cesta": [],
-            "isAdmin": false,
+            "isAdmin": true,
 
-            "pedidos": [{ "nombre": "te verde christmastea green" }, { "nombre": "infusion camomilla golden" },
-                { "nombre": "te rojo (pu erh) praline" }
-            ],
+            "pedidos": [],
 
         },
         {
@@ -94,8 +92,8 @@ const bcrypt = require('bcrypt');
                 { "nombre": "depurativo", "puntuacion": 2 }
             ],
             "cesta": [],
-            "isAdmin": false,
-            "pedidos": [{ "nombre": "te verde japan kukicha organic superior" }, { "nombre": "infusion herbal spirit" }],
+            "isAdmin": true,
+            "pedidos": [],
         },
         {
             "nombre": "Mikel",
@@ -124,7 +122,7 @@ const bcrypt = require('bcrypt');
             "cesta": [],
             "isAdmin": false,
 
-            "pedidos": [{ "nombre": "Infusion indian yogui" }],
+            "pedidos": [],
         },
         {
             "nombre": "Jose",
@@ -153,7 +151,7 @@ const bcrypt = require('bcrypt');
             "cesta": [],
             "isAdmin": false,
 
-            "pedidos": [{ "nombre": "infusion magic forest" }, { "nombre": "te verde japan genmaicha" }, { "nombre": "te verde japan gyokuro asahi" }, { "nombre": "te verde 1001 noches" }],
+            "pedidos": [],
         },
         {
             "nombre": "Peio",
@@ -182,7 +180,7 @@ const bcrypt = require('bcrypt');
             "cesta": [],
             "isAdmin": false,
 
-            "pedidos": [{ "nombre": "infusion polar mint" }, { "nombre": "super moringa red fruits" }, { "nombre": "te oolong (azul) spily strawberry" }, { "nombre": "infusion golden cake" }],
+            "pedidos": [],
         },
         {
             "nombre": "Iker",
@@ -211,7 +209,7 @@ const bcrypt = require('bcrypt');
             "cesta": [],
             "isAdmin": false,
 
-            "pedidos": [{ "nombre": "te negro earl grey creme" }],
+            "pedidos": [],
         },
         {
             "nombre": "Jon",
@@ -240,7 +238,7 @@ const bcrypt = require('bcrypt');
             "cesta": [],
             "isAdmin": false,
 
-            "pedidos": [{ "nombre": "te oolong (azul) tie kuan yin" }, { "nombre": "rooibos christmastea rooibos" }],
+            "pedidos": [],
         },
         {
             "nombre": "Marta",
@@ -269,7 +267,7 @@ const bcrypt = require('bcrypt');
             "cesta": [],
             "isAdmin": false,
 
-            "pedidos": [{ "nombre": "matcha latte mango" }, { "nombre": "infusion indian secret" }],
+            "pedidos": [],
         },
         {
             "nombre": "Ander",
@@ -298,7 +296,7 @@ const bcrypt = require('bcrypt');
             "cesta": [],
             "isAdmin": false,
 
-            "pedidos": [{ "nombre": "te blanco snow christmas" }, { "nombre": "te negro oriental christmas" }, { "nombre": "te verde japan bancha superior" }, { "nombre": "infusion apple temptation" }, { "nombre": "infusion cocoa orange" }],
+            "pedidos": [],
         },
         {
             "nombre": "Borja",
@@ -327,7 +325,7 @@ const bcrypt = require('bcrypt');
             "cesta": [],
             "isAdmin": false,
 
-            "pedidos": [{ "nombre": "te rojo (pu erh) red curcuma latte" }, { "nombre": "te negro darjeeling ringtone SFTGFOP1" }, { "nombre": "Té negro Darjeeling First Flush FTGFOP01" }, { "nombre": "te verde matcha gracia blend green" }],
+            "pedidos": [],
         },
         {
             "nombre": "Alberto",
@@ -356,7 +354,7 @@ const bcrypt = require('bcrypt');
             "cesta": [],
             "isAdmin": false,
 
-            "pedidos": [{ "nombre": "miracle organic matcha (30gr)" }, { "nombre": "te verde japan bancha superior" }],
+            "pedidos": [],
         },
 
         {
@@ -386,7 +384,7 @@ const bcrypt = require('bcrypt');
             "cesta": [],
             "isAdmin": false,
 
-            "pedidos": [{ "nombre": "infusion cocktail de frutas" }, { "nombre": "infusion camomilla golden" }, { "nombre": "infusion calm moment" }],
+            "pedidos": [],
         },
         {
             "nombre": "Itxaso",
@@ -415,7 +413,7 @@ const bcrypt = require('bcrypt');
             "cesta": [],
             "isAdmin": false,
 
-            "pedidos": [{ "nombre": "te negro chai latte" }, { "}nombre": "infusion ginger balm" }, { "nombre": "infusion polar mint" }, { "nombre": "te blanco snow christmas" }],
+            "pedidos": [],
         },
         {
             "nombre": "Monica",
@@ -444,7 +442,7 @@ const bcrypt = require('bcrypt');
             "cesta": [],
             "isAdmin": false,
 
-            "pedidos": [{ "nombre": "te verde japan kukicha organic superior" }],
+            "pedidos": [],
         },
         {
             "nombre": "Tamsir",
@@ -473,7 +471,7 @@ const bcrypt = require('bcrypt');
             "cesta": [],
             "isAdmin": false,
 
-            "pedidos": [{ "nombre": "te verde japan gyokuro asahi" }, { "nombre": "infusion herbal spirit" }],
+            "pedidos": [],
         },
         {
             "nombre": "Xabi",
@@ -502,7 +500,7 @@ const bcrypt = require('bcrypt');
             "cesta": [],
             "isAdmin": false,
 
-            "pedidos": [{ "nombre": "infusion mediterraneo" }, { "nombre": "te verde japan genmaicha" }, { "nombre": "infusion indian yogi" }, { "nombre": "miracle organic matcha (30gr)" }],
+            "pedidos": [],
         },
         {
             "nombre": "Jasone",
@@ -531,7 +529,7 @@ const bcrypt = require('bcrypt');
             "cesta": [],
             "isAdmin": false,
 
-            "pedidos": [{ "nombre": "infusion polar mint" }, { "nombre": "infusion golden cake" }, { "nombre": "te oolong (azul) spily strawberry" }, { "nombre": "infusion ginger balm" }],
+            "pedidos": [],
         },
         {
             "nombre": "Eneko",
@@ -560,7 +558,7 @@ const bcrypt = require('bcrypt');
             "cesta": [],
             "isAdmin": false,
 
-            "pedidos": [{ "nombre": "te verde japan gyokuro asahi" }, { "nombre": "infusion apple temptation" }, { "nombre": "infusion magic forest" }],
+            "pedidos": [],
         },
         {
             "nombre": "Julio",
@@ -589,7 +587,7 @@ const bcrypt = require('bcrypt');
             "cesta": [],
             "isAdmin": false,
 
-            "pedidos": [{ "nombre": "rooibos christmastea rooibos" }],
+            "pedidos": [],
         },
         {
             "nombre": "Maria",
@@ -618,7 +616,7 @@ const bcrypt = require('bcrypt');
             "cesta": [],
             "isAdmin": false,
 
-            "pedidos": [{ "nombre": "te verde japan genmaicha" }, { "nombre": "te rojo (pu erh) praline" }],
+            "pedidos": [],
         },
         {
             "nombre": "Mario",
@@ -647,7 +645,7 @@ const bcrypt = require('bcrypt');
             "cesta": [],
             "isAdmin": false,
 
-            "pedidos": [{ "nombre": "te blanco snow christmas", }],
+            "pedidos": [],
         },
         {
             "nombre": "Benito",
@@ -676,7 +674,7 @@ const bcrypt = require('bcrypt');
             "cesta": [],
             "isAdmin": false,
 
-            "pedidos": [{ "nombre": "te rojo (pu erh) red curcuma latte" }],
+            "pedidos": [],
         },
         {
             "nombre": "Rosa",
@@ -705,7 +703,7 @@ const bcrypt = require('bcrypt');
             "cesta": [],
             "isAdmin": false,
 
-            "pedidos": [{ "nombre": "infusion indian secret" }, { "nombre": "infusion sweet turron" }, { "nombre": "infusion ginger balm" }, { "nombre": "te verde 1001 noches" }, { "nombre": "infusion mediterraneo" }],
+            "pedidos": [],
         },
     ]
     let users = usuarios.map(function(us) {
