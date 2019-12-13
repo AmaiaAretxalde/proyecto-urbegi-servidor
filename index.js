@@ -37,8 +37,11 @@ passport.use(
                 const usuario = usuarios[0];
                 let result = (bcrypt.compareSync(password, usuario.password));
                 if (result) {
+                    console.log(`login de ${usuario}`)
                     return done(null, usuario);
                 } else {
+                    console.log(`fallo en el login de ${usuario}`)
+
                     return done(null, false);
                 };
             })
