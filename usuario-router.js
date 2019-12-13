@@ -102,5 +102,15 @@ router.post('/registro/funciones', function (req, res) {
     });
 });
 
+//OBTENER NOMBRE DE USUARIO LOGUEADO
+router.get('/nombre', async function (req, res) {
+    const user = req.user
+    if (req.isAuthenticated() === false) {
+        res.send({ mensaje: 'No estás logueado', logged: false });
+    } else {
+       res.send({mensaje:'Estás logueado', logged: true, nombre:user.nombre});
+    };
+});
+
 
 module.exports = router;

@@ -2,9 +2,9 @@ const express = require('express');
 const app = express();
 const bcrypt = require('bcrypt');
 const mongoose = require('mongoose');
-const Tea = require('./models/Tea')
-const User = require('./models/User')
-const Tipo = require('./models/Tipo')
+const Tea = require('./models/Tea');
+const User = require('./models/User');
+const Tipo = require('./models/Tipo');
 
 
 mongoose.connect('mongodb://localhost:27017/teashop');

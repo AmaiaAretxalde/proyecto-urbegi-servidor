@@ -2,6 +2,7 @@ const router = require('express').Router();
 const Tea = require('./models/Tea');
 const Tipo = require('./models/Tipo');
 const User = require('./models/User');
+const nodemailer = require('nodemailer');
 
 // PARA AÑADIR A LA CESTA
 router.post('/', async function (req, res) {
@@ -62,7 +63,7 @@ router.delete('/:id', async function (req, res) {
 //MODIFICAR UNIDADES DE CESTA
 router.put('/', async function (req, res) {
     let posicion;
-   
+
     if (req.isAuthenticated() === false) {
         return res.send({ mensaje: 'No estás logueado', logged: false });
     } else {
@@ -74,9 +75,9 @@ router.put('/', async function (req, res) {
             console.log(element.producto.id)
             console.log(id)
             return element.producto.id === id;
-            
+
         });
-   
+
         if (posicion === undefined || posicion === (-1)) {
             res.send({ mensaje: 'este producto no existe en la cesta', logged: true, cestaExistente });
         } else {
@@ -99,7 +100,7 @@ router.get('/', async function (req, res) {
     if (req.isAuthenticated() === false) {
         res.send({ mensaje: 'No estás logueado', logged: false });
     } else {
-       res.send(user.cesta);
+        res.send(user.cesta);
     };
 });
 
@@ -117,8 +118,34 @@ router.get('/pedido', async function (req, res) {
         user.markModified('cesta');
         await user.save();
 
-        res.send({ mensaje: 'pedido realizado', logged: true, respuesta:user.pedidos });
+        res.send({ mensaje: 'pedido realizado', logged: true, respuesta: user.pedidos });
     }
 });
+
+//MANDAR MAIL CUANDO SE HACE PEDIDO
+function enviarMail() {
+    let transporter = nodemailer.createTransport({
+        service: 'gmail',
+        auth: {
+            user: 'ureproyectofinal@gmail.com',
+            pass: 'ure'
+        }
+    });
+
+    let mailOptions = {
+        from: 'ureproyectofinal@gmail.com',
+        to: 'aaretxalde@gmail.com',
+        subject: 'Confirmación de pedido',
+        text: 'Confirmación de pedido'
+    };
+
+    transporter.sendMail(mailOptions, function (error, info) {
+        if (error) {
+            console.log(error);
+        } else {
+            console.log('Email sent: ' + info.response);
+        }
+    });
+}
 
 module.exports = router;
