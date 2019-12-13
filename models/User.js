@@ -20,9 +20,7 @@ const User = mongoose.model('User', {
         puntuacion: Number,
     }],
     cesta: Array,
-    pedidos: [{
-        nombre: String,
-    }],
+    pedidos: Array,
     isAdmin: Boolean,
 
 });

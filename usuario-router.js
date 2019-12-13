@@ -71,7 +71,7 @@ router.get('/funciones', function (req, res) {
 //ENCONTRAR PEDIDOS DE AMIGO:
 router.post('/recomendaciones', function (req, res) {
     let emailAmigo = req.body.email;
-    User.findOne({ email: emailAmigo }, function (err, datos) {
+    User.find({ email: emailAmigo }, function (err, datos) {
         if (err !== null) {
             res.send({ mensaje: '404' });
             return;
@@ -101,25 +101,6 @@ router.post('/registro/funciones', function (req, res) {
         }
     });
 });
-
-// router.post('/recomendaciones', function (req, res) {
-//     let sabores = req.body.sabores;
-//     let funciones = req.body.funciones;
-//     let email = req.body.email;
-//     Tea.find({ sabores: email }, function (err, datos) {
-//         if (err !== null) {
-//             res.send({ mensaje: '404' });
-//             return;
-//         }
-//         if ( datos===null || datos.length === 0) {
-//             res.send({ mensaje: 'No estás registrado' });
-//         } else {
-
-//             res.send(datos );
-//         }
-//     });
-// });
-
 
 
 module.exports = router;
