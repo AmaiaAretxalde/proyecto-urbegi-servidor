@@ -99,18 +99,17 @@ router.get('/', async function (req, res) {
     if (req.isAuthenticated() === false) {
         res.send({ mensaje: 'No estás logueado', logged: false });
     } else {
-        await res.send(user.cesta);
+       res.send(user.cesta);
     };
 });
 
 
 //PASAR DE CESTA A PEDIDO
 router.get('/pedido', async function (req, res) {
-
-    const user = req.user
     if (req.isAuthenticated() === false) {
         res.send({ mensaje: 'No estás logueado', logged: false });
     } else {
+        const user = req.user
         user.pedidos.push(user.cesta);
         user.markModified('pedidos');
         await user.save();
@@ -118,11 +117,8 @@ router.get('/pedido', async function (req, res) {
         user.markModified('cesta');
         await user.save();
 
-        res.send({ mensaje: 'pedido realizado', logged: true, respuesta: pedidos });
+        res.send({ mensaje: 'pedido realizado', logged: true, respuesta:user.pedidos });
     }
 });
-
-
-
 
 module.exports = router;
