@@ -112,23 +112,31 @@ router.get('/pedido', async function (req, res) {
     } else {
         const user = req.user
         user.pedidos.push(user.cesta);
+        let mensaje='';
+        for(let i=0;i<user.cesta.length;i++){
+            mensaje+=`<p>Producto: ${user.cesta[i].producto.name}</p>
+                     <p>Unidades: ${user.cesta[i].unidades}</p> 
+                     <p>Precio ${user.cesta[i].producto.basePrice}€/ud</p>
+                     <hr>`;
+        }
         user.markModified('pedidos');
         await user.save();
+        enviarMail(user.nombre, mensaje);
         user.cesta = [];
         user.markModified('cesta');
         await user.save();
-
+        console.log(mensaje)
         res.send({ mensaje: 'pedido realizado', logged: true, respuesta: user.pedidos });
     }
 });
 
 //MANDAR MAIL CUANDO SE HACE PEDIDO
-function enviarMail() {
+function enviarMail(nombre, pedido) {
     let transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
             user: 'ureproyectofinal@gmail.com',
-            pass: 'ure'
+            pass: 'ureproyecto'
         }
     });
 
@@ -136,14 +144,21 @@ function enviarMail() {
         from: 'ureproyectofinal@gmail.com',
         to: 'aaretxalde@gmail.com',
         subject: 'Confirmación de pedido',
-        text: 'Confirmación de pedido'
+        text: 'Tu pedido se ha procesado correctamente',
+        html: `<h2>${nombre}, tu pedido en URE se ha procesado correctamente</h2>
+        <h3>Tu pedido incluye:</h3>
+        <p>${pedido}</p>
+        <p>Plazo de entrega: 2-3 días laborables</p>`,
+        
     };
 
     transporter.sendMail(mailOptions, function (error, info) {
         if (error) {
             console.log(error);
+           
         } else {
             console.log('Email sent: ' + info.response);
+         
         }
     });
 }
