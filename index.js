@@ -118,7 +118,7 @@ app.post('/api/usuario/nombre', function(req, res) {
             return;
         }
         if (datos.length !== 0) {
-            res.send({ email: email, nombre: datos[0].nombre });
+            res.send({ email: email, nombre: datos[0].nombre, isAdmin: datos[0].isAdmin });
         }
     });
 });
