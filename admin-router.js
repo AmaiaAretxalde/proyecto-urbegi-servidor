@@ -28,28 +28,28 @@ espera un json como este:
 
 
 router.post('/tea', async function(req, res) {
-    let body = req.body
+    let elTe = req.body.te
 
     let tea = new Tea();
-    tea.mainImage = body.mainImage;
-    tea.categoria = req.body.categoria
-    tea.descripcion = req.body.descripcion
-    tea.name = req.body.name
-    tea.longDescription = req.body.longDescription
+    tea.mainImage = elTe.mainImage
+    tea.categoria = elTe.categoria
+    tea.descripcion = elTe.descripcion
+    tea.name = elTe.name
+    tea.longDescription = elTe.longDescription
     tea.caracteristicas.aroma = {
         image: "https://dhb3yazwboecu.cloudfront.net/1007/icons/aroma.svg",
-        texto: req.body.aroma
+        texto: elTe.aroma
     }
     tea.caracteristicas.sabor = {
         image: "https://dhb3yazwboecu.cloudfront.net/1007/icons/sabor.svg",
-        texto: req.body.sabor
+        texto: elTe.sabor
     }
     tea.caracteristicas.color = {
         image: "https://dhb3yazwboecu.cloudfront.net/1007/icons/color.svg",
-        texto: req.body.color
+        texto: elTe.color
     }
 
-    tea.stock = req.body.stock
+    tea.stock = elTe.stock
     tea.basePrice = req.body.basePrice
 
 
@@ -90,32 +90,32 @@ espera un json como este:
 */
 router.put('/tea/:id', async function(req, res) {
     let identificador = req.params.id
-    let body = req.body
-
+    let body = req.body.te;
+    console.log(body)
     let jsonTea = {};
     jsonTea.mainImage = body.mainImage;
-    jsonTea.categoria = req.body.categoria
-    jsonTea.descripcion = req.body.descripcion
-    jsonTea.name = req.body.name
-    jsonTea.longDescription = req.body.longDescription
+    jsonTea.categoria = body.categoria
+    jsonTea.descripcion = body.descripcion
+    jsonTea.name = body.name
+    jsonTea.longDescription = body.longDescription
     jsonTea.caracteristicas = {}
     jsonTea.caracteristicas.aroma = {
         image: "https://dhb3yazwboecu.cloudfront.net/1007/icons/aroma.svg",
-        texto: req.body.aroma
+        texto: body.aroma
     }
     jsonTea.caracteristicas.sabor = {
         image: "https://dhb3yazwboecu.cloudfront.net/1007/icons/sabor.svg",
-        texto: req.body.sabor
+        texto: body.sabor
     }
     jsonTea.caracteristicas.color = {
         image: "https://dhb3yazwboecu.cloudfront.net/1007/icons/color.svg",
-        texto: req.body.color
+        texto: body.color
     }
 
-    jsonTea.stock = req.body.stock
-    jsonTea.basePrice = req.body.basePrice
+    jsonTea.stock = body.stock
+    jsonTea.basePrice = body.basePrice
 
-
+    console.log(jsonTea)
     await Tea.updateOne({ _id: identificador }, jsonTea, { upsert: true });
     res.send({ mensaje: 'tea modificado', tea: jsonTea });
 
