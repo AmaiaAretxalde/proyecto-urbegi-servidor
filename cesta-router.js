@@ -112,9 +112,9 @@ router.get('/pedido', async function (req, res) {
     } else {
         const user = req.user
         user.pedidos.push(user.cesta);
-        let mensaje='';
-        for(let i=0;i<user.cesta.length;i++){
-            mensaje+=`<p>Producto: ${user.cesta[i].producto.name}</p>
+        let mensaje = '';
+        for (let i = 0; i < user.cesta.length; i++) {
+            mensaje += `<p>Producto: ${user.cesta[i].producto.name}</p>
                      <p>Unidades: ${user.cesta[i].unidades}</p> 
                      <p>Precio ${user.cesta[i].producto.basePrice}€/ud</p>
                      <hr>`;
@@ -122,6 +122,9 @@ router.get('/pedido', async function (req, res) {
         user.markModified('pedidos');
         await user.save();
         enviarMail(user.nombre, mensaje);
+        for (let i = 0; i < user.cesta.length; i++) {
+            gestionarStock(user.cesta[i].producto.name, user.cesta[i].unidades)
+        }
         user.cesta = [];
         user.markModified('cesta');
         await user.save();
@@ -145,21 +148,51 @@ function enviarMail(nombre, pedido) {
         to: 'aaretxalde@gmail.com',
         subject: 'Confirmación de pedido',
         text: 'Tu pedido se ha procesado correctamente',
-        html: `<h2>${nombre}, tu pedido en URE se ha procesado correctamente</h2>
+        html: `<h2>${nombre}, tu pedido en Ure se ha procesado correctamente</h2>
         <h3>Tu pedido incluye:</h3>
         <p>${pedido}</p>
         <p>Plazo de entrega: 2-3 días laborables</p>`,
-        
+
     };
 
     transporter.sendMail(mailOptions, function (error, info) {
         if (error) {
             console.log(error);
-           
+
         } else {
             console.log('Email sent: ' + info.response);
-         
+
         }
+    });
+}
+
+//GESTIONAR STOCK
+function gestionarStock(producto, unidades) {
+    Tea.find({ name: producto }, function (err, datos) {
+        if (err !== null) {
+            console.log({ mensaje: '404' });
+            return;
+        }
+        if (datos === null || datos.length === 0) {
+            console.log({ mensaje: 'No se ha encontrado ese producto' });
+            return;
+        } else {
+            let nuevoStock = datos[0].stock - unidades;
+            console.log(nuevoStock)
+            Tea.findOneAndUpdate({ name: producto }, { stock: nuevoStock }, function (err, datos) {
+                if (err !== null) {
+                    console.log({ mensaje: '404' });
+                    return;
+                }
+                if (datos === null || datos.length === 0) {
+                    console.log({ mensaje: 'No se ha encontrado el producto' });
+                    return;
+                } else {
+                    console.log({ mensaje: 'Se ha modificado las unidades de stock del producto seleccionado' });
+                    return;
+                }
+            });
+        };
     });
 }
 
