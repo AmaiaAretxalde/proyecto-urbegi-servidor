@@ -714,7 +714,7 @@ let teas = [{
         "stock": 235,
         "basePrice": 18.75
     },
-    //NUEVO
+    
     {
         "id": "22",
         "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007/fotosProducto/tes/28010_GoldenCake_1000x1000_l.jpg",
