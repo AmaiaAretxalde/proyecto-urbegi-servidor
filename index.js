@@ -6,8 +6,11 @@ const Tea = require('./models/Tea');
 const User = require('./models/User');
 const Tipo = require('./models/Tipo');
 
+require('dotenv').config();
 
-mongoose.connect('mongodb://localhost:27017/teashop');
+let password = process.env.PASSWORD;
+
+mongoose.connect(`mongodb+srv://amaiaaretxalde:${password}@cluster0-ojbh1.mongodb.net/teashop?retryWrites=true&w=majority`);
 
 app.use(express.static('public'));
 app.use(express.urlencoded({ extended: false }));
@@ -142,7 +145,6 @@ app.get('/api/logout', function(req, res) {
     req.logout();
     res.send({ mensaje: 'desconectado' });
 });
-
 
 
 

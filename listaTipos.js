@@ -134,7 +134,7 @@ let descripcionTipos = [
     }
 ]
 let tipo = descripcionTipos.map(function (dt) {
-    return new  Tipos(dt);
+    return new  Tipo(dt);
 });
 console.log(tipo);
 for (i in tipo){
