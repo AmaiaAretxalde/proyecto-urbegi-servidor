@@ -49,7 +49,7 @@ let descripcionTipos = [
     },
     {
         "nombre": "Té negro",
-        "foto": "https://t2.uc.ltmcdn.com/images/5/0/3/img_cuales_son_las_contraindicaciones_del_te_negro_41305_600.jpg",
+        "foto": "https://images.unsplash.com/photo-1492778297155-7be4c83960c7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80",
         "descripcion": "El té negro es un té que se encuentra oxidado en mayor grado que las variedades de té verde, té oolong y té blanco. Las cuatro variedades indicadas se preparan con hojas de Camellia sinensis. El té negro generalmente posee un aroma más fuerte y contiene más cafeína que otros tés con menores niveles de oxidación.",
         "modoPreparacion": [ 
             "-Después de la deshidratación, las hojas del té negro son sometidas a un largo proceso de oxidación tras el cual se obtiene la variedad de té con mayor contenido en teína. La infusión es rojiza y tiene sabor dulzón.",
@@ -72,7 +72,7 @@ let descripcionTipos = [
     },
     {
         "nombre": "Té blanco",
-        "foto": "https://lacronicadelpajarito.com/wp-content/uploads/2019/02/te-blanco-2.jpg",
+        "foto": "https://images.unsplash.com/photo-1536677813196-8fed27bcecdc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1300&q=80",
         "descripcion": "El té blanco (en chino, 白茶; pinyin, báichá) original de China es un té mínimamente procesado. El té blanco viene de delicadas yemas y hojas jóvenes de la planta Camellia sinensis originaria de China, concretamente de la provincia de Fujian.1​ Estas yemas y hojas se dejan marchitar ligeramente en primer lugar, después se secan a los rayos del sol y son ligeramente procesadas para prevenir la oxidación. Esto preserva las características de su sabor.A pesar de su nombre, el té blanco elaborado es de color amarillo pálido. Su nombre deriva de los finos pelos de color blanco plateado en los brotes sin abrir de la planta del té, que le dan a la planta un aspecto blanquecino",
         "modoPreparacion": [
             "-Es un té que se elabora con los brotes deshidratados de la planta, cuando la hoja aún no se ha abierto. No se somete a fermentación y su sabor es muy suave y delicado.",
@@ -92,7 +92,7 @@ let descripcionTipos = [
     },
     {
         "nombre": "Té Oolong",
-        "foto": "https://img.culturacolectiva.com/cdn-cgi/image/f=auto,w=auto,q=80,fit=contain/content_image/2019/1/30/1548885108156-te-oolong-o-te-azul-beneficios-y-propiedades-indicaciones.jpg",
+        "foto": "https://img.freepik.com/foto-gratis/pote-te-azul_23-2147693737.jpg?size=626&ext=jpg",
         "descripcion": "El oolong (Chino simplificado: 乌龙; Chino Tradicional: 烏龍; Pinyin: wūlóng; también conocido como té azul) es un té chino tradicional (Camellia sinensis) que queda entre el verde y el negro en oxidación, lo cual le da un característico tono azulado.1​ Está entre los tipos de té más populares servidos en los restaurantes chinos típicos.",
         "modoPreparacion": [
             "-También llamado té azúl, es un té a medio camino entre el verde y el negro con una oxidación no tan larga como la de este último que le da un tono ligeramente azulado. Su sabor es más parecido al del té verde que al del negro, pero no llega a tener los matices herbales tan marcados como el té verde.",

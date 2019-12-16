@@ -8,4 +8,5 @@ const Tipo = mongoose.model('Tipo', {
     beneficios: Array
 });
    
+
 module.exports = Tipo;
