@@ -112,5 +112,15 @@ router.get('/nombre', async function (req, res) {
     };
 });
 
+//ENCONTRAR PEDIDOS USUARIO LOGUEADO:
+router.get('/productos-comprados', function (req, res) {
+    const user = req.user;
+    if(user.pedidos.length===0){
+        res.send({mensaje:`No hay registrados pedidos del usuario ${user.nombre}`});
+    }else{
+
+        res.send({mensaje:`Enviados los pedidos del usuario ${user.nombre}`, pedidos: user.pedidos});
+    }
+});
 
 module.exports = router;
