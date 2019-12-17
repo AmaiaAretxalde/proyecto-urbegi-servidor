@@ -3,6 +3,7 @@ let teas = [{
         "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007//28011_2-Sweet-Turron-1000x1000_l.jpg",
         "categoria": "Infusión",
         "descripcion": "Una navidad cargada de dulzura con el intenso sabor del turrón más clásico.",
+        "unidadesVendidas": 0,
         "name": "Infusión Sweet Turron",
         "longDescription": [
             "Una navidad cargada de dulzura con nuestra infusión Sweet Turrón. Deleitará tu paladar y te hará recordar el intenso sabor del turrón más clásico. Una base de manzana mezclada con trocitos de almendra, canela y los aromas más deliciosos del mazapán  Funcionalidad: Vitamínicas  ¡Quiero saber más!: Con Sweet Turrón contemplamos el antiguo secreto de la felicidad: “desear lo que ya tengo, vivir un momento que ya es mío.\\\" Un refrán anónimo que podremos hacer nuestro cuando estemos disfrutando de esta infusión. La bebida dulce y original que pondrá el \\\"toque final” a las comidas navideñas.  Ingredientes: Una navidad cargada de dulzura con el intenso sabor del turrón más clásico: manzana mezclada con almendra, canela y los aromas del mazapán.",
@@ -39,6 +40,7 @@ let teas = [{
         "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007//10142_ChristmasTeaBlack_1000x1000_l.jpg",
         "categoria": "Té negro",
         "descripcion": "Tés negros, almendra tostada, manzana y naranja. 20 años Historia.",
+        "unidadesVendidas": 0,
         "name": "Té negro ChristmasTea Black",
         "longDescription": [
             "ChristmasTea Black de la gama de Tés navideños Tea Shop, es una mezcla con más de 20 años de historia y que se sigue elaborando con la misma receta de siempre: una base de tes negros de sabor fuerte y amaderado con un concentrado de ingredientes que nos recuerdan al sabor único del mazapán mezclado con manzana, naranja, almendra tostada y el intenso sabor de las especias de oriente como la canela y el clavo.  Una mezcla de cálido aroma y sabor para los días fríos de invierno. Perfecto con repostería especiada.   INGREDIENTES: Mezcla de dos tés negros, naranja, almendra, canela, manzana, clavo, pétalos de aciano, aroma de almendra, canela, naranja ALÉRGENOS: Contiene frutos secos.  BENEFICIOS: El Té Negro es una buena bebida de carácter “estimulante suave” del sistema nervioso central que contribuye a despejar la mente.  La canela es carminativa; eficaz en caso de cólicos y problemas estomacales. El clavo es eficaz para aliviar náuseas, dolores de estómago y dolores de muela. La fruta nos aporta vitamina C, antioxidantes y fibra además de hidratar el organismo.  Los frutos secos son alimentos muy completos, energéticos y ricos en minerales y nutrientes.  FUNCIONALIDAD: Energizante.",
@@ -82,6 +84,7 @@ let teas = [{
         "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007//11104_ChristmasTeaRed_1000x1000_l-1.jpg",
         "categoria": "Té rojo (Pu Erh)",
         "descripcion": "Té rojo Pu Erh, almendra tostada y canela",
+        "unidadesVendidas": 0,
         "name": "Té rojo (Pu Erh) ChristmasTea Red",
         "longDescription": [
             "Christmas Tea Red, de la gama de tés navideños Tea Shop, es una mezcla con más de 20 años de historia que se sigue elaborando con la misma receta de siempre: una base de Té rojo Pu Erh de intenso sabor terroso con un concentrado de ingredientes que nos recuerdan al sabor único del mazapán mezclado con manzana, naranja, almendra tostada y el intenso sabor de las especias de oriente como la canela y el clavo. ",
@@ -122,6 +125,7 @@ let teas = [{
         "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007//27018_Mediterraneo_1000x1000_l.jpg",
         "categoria": "Té verde",
         "descripcion": "Original mezcla a base de romero con elementos cítricos. Un contraste en boca que recuerda a los sabores del Mediterráneo.",
+        "unidadesVendidas": 0,
         "name": "Infusión Mediterráneo",
         "longDescription": [
             "",
@@ -156,6 +160,7 @@ let teas = [{
         "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007/fotosProducto/tes/27014_PolarMint_1000x1000_l.jpg",
         "categoria": "Té verde",
         "descripcion": "Combinación de mentas con semillas de escaramujo y un toque de regaliz.",
+        "unidadesVendidas": 0,
         "name": "Infusión Polar Mint",
         "longDescription": [
             "",
@@ -192,6 +197,7 @@ let teas = [{
         "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007//27020_SuperMoringaRed_1000X1000_l.jpg",
         "categoria": "Té rojo",
         "descripcion": "Infusión de moringa y rooibos  con hibisco blanco, manzana y trozos de fresa",
+        "unidadesVendidas": 0,
         "name": "Infusión Super Moringa Red Fruits",
         "longDescription": [
             "Una mezcla original Tea Shop con ingredientes SUPERFOOD como la Moringa denominada también \\\"La Planta Milagrosa\\\" por sus beneficios anti-age. Originaria de la India oriental, la Moringa es una planta con múltiples sustancias amigas de la salud. Esta mezcla con ingredientes vitamínicos como manzana, escaramujo, Rooibos, hojas de moringa, trocitos de fresa y frambuesa y un toque de hibisco blanco es agradable tanto en caliente como helada en cualquier momento del día.   Funcionalidad: Antioxidante   Otras funciones: Fuente de minerales, Vitamina C, Antiinflamatorio y Aumenta los niveles de energía   ¡Quiero sabes más!: Totalmente sin teína, tiene notas dulces al paladar con un toque ligeramente amargo debido a la Moringa. Para los amantes de las bebidas ISOTÓNICAS y MULTIVITAMINICAS   Ingredientes: Manzana, Rooibos, moringa, hibisco blanco, trozos de fresa, trozos de frambuesa",
@@ -232,6 +238,7 @@ let teas = [{
         "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007//75049_MatchaLatteMango_1000X1000_l.jpg",
         "categoria": "Té matcha",
         "descripcion": "Té verde molido con aroma de mango lleno de antioxidantes. Perfecto para crear tus smoothies y elaborar repostería. ",
+        "unidadesVendidas": 0,
         "name": "Matcha Latte Mango",
         "longDescription": [
             "Peso neto 30g.",
@@ -264,6 +271,7 @@ let teas = [{
         "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007//75086_OrganicMiracleMatcha30gr_21000X1000_l.jpg",
         "categoria": "Té matcha",
         "descripcion": "Té verde Matcha orgánico, muy exclusivo y de gran calidad",
+        "unidadesVendidas": 0,
         "name": "Miracle Organic Matcha (30g)",
         "longDescription": [
             "Té verde matcha orgánico categorizado con calidad 5 estrellas procedente de cultivos ecológicos. Cultivado en la zona de Nishio (situado en la región de Aichi): zona de Japón muy conocida por su alta calidad de Matcha.   Tras la recolección, las hojas se cubren alrededor de 21 días (es el máximo tiempo posible). Esto hace que el té adquiera unos niveles óptimos y excelentes de clorofila y nutrientes, de ahí su color más verde y su sabor más dulce de lo habitual. Debido al largo periodo de cubrimiento, se trata de un té exclusivo del cual no existe una gran cantidad en el mundo.",
@@ -301,6 +309,7 @@ let teas = [{
         "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007/fotosProducto/tes/11114_Praline_1000x1000_l.jpg",
         "categoria": "Té rojo (Pu Erh)",
         "descripcion": "Delicioso Té rojo,mezcla de Pu Erh Tea, con avellanas picadas y tostadas, algarroba, manzana, canela, crocanti (azucar, avellanas), chicoria, pie de gato amarillo y aromas de avellana, caramelo, nata o vanilla",
+        "unidadesVendidas": 0,
         "name": "Té rojo (Pu Erh) Praliné",
         "longDescription": [
             "Delicioso Té rojo Pu Erh, traído directamente desde las mejores plantaciones chinas, y endulzado con canela, manzana, avellanas, crocanti, chicoria y toques de avellana, caramelo, nata o vanilla; que te ayuda a cuidar tu línea mientras endulza tu paladar con su nuevo, sabroso y digestivo mix de sabores. ",
@@ -336,6 +345,7 @@ let teas = [{
         "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007/fotosProducto/tes/11109_PuErhChai_1000x1000_l.jpg",
         "categoria": "Té rojo (Pu Erh)",
         "descripcion": "La mezcla de Té Rojo Chai perfecta para perder peso",
+        "unidadesVendidas": 0,
         "name": "Té rojo Pu Erh Chai",
         "longDescription": [
             "Máximo sabor con un toque picante. Sorprende por su intensidad y carácter. Ideal para acompañar con leche, al clásico estilo chai, o disfrutarlo por si solo.  Su sabor es intenso y con un ligero gusto picante. Para tomar tanto en caliente, como en frío.   INGREDIENTES: Pu Erh, canela, jengibre, clavo y semillas de cardamomo. BENEFICIOS: No contiene alérgenos.",
@@ -375,6 +385,7 @@ let teas = [{
         "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007/fotosProducto/tes/16001_1001Noches_1000x1000_l.jpg",
         "categoria": "Té verde",
         "descripcion": "Ideal combinación de Té Negro y Té Verde con flores de jazmín.",
+        "unidadesVendidas": 0,
         "name": "Té verde 1001 Noches",
         "longDescription": ["Ideal combinación de Té Negro y Té Verde con flores de jazmín."],
         "caracteristicas": {
@@ -404,6 +415,7 @@ let teas = [{
         "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007//13144_GraciaBlendMatcha_1000x1000_l.jpg",
         "categoria": "Té verde",
         "descripcion": "",
+        "unidadesVendidas": 0,
         "name": "Té verde Matcha Gracia Blend Green",
         "longDescription": [],
         "caracteristicas": {
@@ -433,6 +445,7 @@ let teas = [{
         "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007//10049_DarjeelingFirstFlush_1000X1000_l.jpg",
         "categoria": "Té negro",
         "descripcion": "Té negro First Flush del jardín Teesta Valley and Gielle (Darjeeling)",
+        "unidadesVendidas": 0,
         "name": "Té negro Darjeeling First Flush FTGFOP01",
         "longDescription": [
             "Ligero y sedoso con pequeño toque herbal. Perfecto para tomar en los desayunos o después de las comidas. ¡Te ayuda a seguir el ritmo del día!",
@@ -473,6 +486,7 @@ let teas = [{
         "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007//10049_DarjeelingFirstFlush_1000X1000_l.jpg",
         "categoria": "Té negro",
         "descripcion": "Té negro Second Flush, jardín Ringtong ",
+        "unidadesVendidas": 0,
         "name": "Té negro Darjeeling Ringtong SFTGFOP1 ",
         "longDescription": [
             "Ligero y sedoso con toque herbal.",
@@ -512,6 +526,7 @@ let teas = [{
         "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007//10137_EarlGreyCreme_1000x1000_l.jpg",
         "categoria": "Té negro",
         "descripcion": "Delicioso Earl Grey con toque de crema",
+        "unidadesVendidas": 0,
         "name": "Té negro Earl Grey Crème",
         "longDescription": [
             "Una deliciosa mezcla, Té negro con aroma de bergamota y aroma de crema, que nos envuelve dulcemente. Té energizante y estimulante con un leve toque dulce y cítrico.  INGREDIENTES: Blend de dos tés negros, aroma de crema y bergamota.",
@@ -546,6 +561,7 @@ let teas = [{
         "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007/fotosProducto/tes/12106_SpicyStrawberry_1000x1000_l.jpg",
         "categoria": "Té Oolong (azul)",
         "descripcion": "Té Oolong con fresa y una exótica mezcla de especias.",
+        "unidadesVendidas": 0,
         "name": "Té Oolong (azul) Spicy Strawberry",
         "longDescription": ["Té Oolong con fresa y una exótica mezcla de especias."],
         "caracteristicas": {
@@ -573,6 +589,7 @@ let teas = [{
         "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007/fotosProducto/tes/12003_TieKuanYin_1000x1000_l.jpg",
         "categoria": "Té Oolong (azul)",
         "descripcion": "De la provincia de Fujian, es uno de los tés Oolong más apreciados en China.",
+        "unidadesVendidas": 0,
         "name": "Té Oolong (azul) Tie Kuan Yin",
         "longDescription": ["De la provincia de Fujian, es uno de los tés Oolong más apreciados en China."],
         "caracteristicas": {
@@ -598,6 +615,7 @@ let teas = [{
         "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007//11117_CinammonRoll_1000X1000_l.jpg",
         "categoria": "Té rojo (Pu Erh)",
         "descripcion": "Té rojo dulce y especiado con canela",
+        "unidadesVendidas": 0,
         "name": "Té rojo (Pu Erh) Cinnamon Roll",
         "longDescription": [
             "",
@@ -632,6 +650,7 @@ let teas = [{
         "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007//13042_JapanBanchaSuperior_1000X1000_l.jpg",
         "categoria": "Té verde",
         "descripcion": "Te verde puro de Japón.",
+        "unidadesVendidas": 0,
         "name": "Té verde Japan Bancha Superior",
         "longDescription": ["Te verde puro de Japón."],
         "caracteristicas": {
@@ -661,6 +680,7 @@ let teas = [{
         "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007/fotosProducto/tes/13006_JapanGenmaicha_1000x1000_l.jpg",
         "categoria": "Té verde",
         "descripcion": "Clásico Té verde japonés con arroz tostado y maíz.",
+        "unidadesVendidas": 0,
         "name": "Té verde Japan Genmaicha",
         "longDescription": ["Clásico Té verde japonés con arroz tostado y maíz."],
         "caracteristicas": {
@@ -690,6 +710,7 @@ let teas = [{
         "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007/fotosProducto/tes/13035_JapanGyokuroAsahi_1000x1000_l.jpg",
         "categoria": "Té verde",
         "descripcion": "Té verde Gyokuro Asahi, de recolección de primavera tardía.",
+        "unidadesVendidas": 0,
         "name": "Té verde Japan Gyokuro Asahi",
         "longDescription": ["Té verde Gyokuro Asahi, de recolección de primavera tardía."],
         "caracteristicas": {
@@ -714,12 +735,13 @@ let teas = [{
         "stock": 235,
         "basePrice": 18.75
     },
-    
+
     {
         "id": "22",
         "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007/fotosProducto/tes/28010_GoldenCake_1000x1000_l.jpg",
         "categoria": "Infusión",
         "descripcion": "Deliciosa infusión inspirada en el embriagador aroma de un bizcocho recién hecho",
+        "unidadesVendidas": 0,
         "name": "Infusión ginger balm",
         "longDescription": [
             "Una mezcla de preciosos y vivos colores, que combina una variedad de frutas dulces, con Rooibos y algarroba, resultando una deliciosa infusión con sabor a tarta de manzana recién salida del horno. La alternativa ideal a esos momentos en que nos apetece algo dulce, pero prefiramos optar por una opción deliciosa, reconfortante y saludable a la vez.",
@@ -756,6 +778,7 @@ let teas = [{
         "categoria": "Té blanco",
         "descripcion": "La poesía de la Navidad: Mezcla de té blanco con mango,manzana,caramelo",
 
+        "unidadesVendidas": 0,
         "name": "Té blanco snow christmas",
         "longDescription": [
             "La poesía de la Navidad en una mezcla de té blanco con daditos de mango, el fruto del amor, que mejora nuestro humor, la dulce manzana, el delicioso caramelo con flores de manzanilla romana y aromas para completar un sabor idílico.",
@@ -793,6 +816,7 @@ let teas = [{
         "categoria": "Té negro",
         "descripcion": "Tés negros,canela,jengibre,regaliz y toque de leche",
 
+        "unidadesVendidas": 0,
         "name": "Té negro chai latte",
         "longDescription": [
             "Chai latte te llenará de energía gracias a sus hojas, mezcla de tés negros con canela, jengibre, pimienta rosa, raíz de regaliz, hinojo y aroma de leche.  Este conjunto de sabores proporcionan a la mezcla un sabor fresco, dulce y especiado, capaz de seducir hasta a los gourmets más exigentes.",
@@ -835,6 +859,7 @@ let teas = [{
         "categoria": "Té negro",
         "descripcion": "Tés negros y fruta dulce de inspiración mediterránea",
 
+        "unidadesVendidas": 0,
         "name": "Té negro oriental christamas",
         "longDescription": [
             "Una mezcla de Tés negros con los sabores y perfumes del “Mare Nostrum”. Una combinación de Tés negros ligeramente astringentes y energizantes, acompañados con fruta dulce y de sabor meloso : dátiles, algarroba y pasa. Pétalos de flores y pistachos  completan esta mezcla de intenso aroma y fuerza.",
@@ -879,6 +904,7 @@ let teas = [{
         "categoria": "Té rojo",
         "descripcion": "Té rojo,curcuma y jengibre,una plenitud de sabores para el bienestar",
 
+        "unidadesVendidas": 0,
         "name": "Té rojo (pu erh) red curcuma latte",
         "longDescription": [
             "Deliciosamente sabrosa, esta mezcla de Té Rojo contiene los ingredientes de las mil virtudes. La cúrcuma de color amarillo - naranja se conoce también como el azafrán de las indias y concentra múltiples propiedades antinflamatorias y antioxidantes. Una plenitud de sabores, ideal infusionada con un toque de pimienta, media cucharadita de aceite de coco y leche vegetal, tanto en caliente como en frío con hielo.",
@@ -917,6 +943,7 @@ let teas = [{
         "categoria": "Té verde",
         "descripcion": "Té verde 100% orgánico con tallos y hojas,procedente de la región de Kyushu,Japón",
 
+        "unidadesVendidas": 0,
         "name": "Té verde japan kukicha organic superior",
         "longDescription": [
             "En Occidente es una bebida muy apreciada en gran parte por la influencia de la macrobiótica, que considera este té una de las bebidas más saludables por su fuerte poder alcalinizante. Al haber permanecido 3 años en la planta, ha perdido prácticamente toda la teína y ha absorbido las múltiples propiedades y vitaminas de la naturaleza que lo rodea.  Cualquier momento del día es bueno para tomar una taza de kukicha, incluso después de cenar, sin riesgo de “quitar el sueño”. 13 veces más calcio que en un vaso de leche.",
@@ -954,6 +981,7 @@ let teas = [{
         "categoria": "Infusión",
         "descripcion": "Rooibos,almendra,manzana,naranja y especias,una mezcla con todo el sabor",
 
+        "unidadesVendidas": 0,
         "name": "Rooibos christmastea rooibos",
         "longDescription": [
             "Christmas Tea Rooibos de la gama de tés navideños Tea Shop, es una mezcla con más de 20 años de historia y que se sigue elaborando con la misma receta de siempre: una base de Rooibos, conocido por su dulzura y propiedades beneficiosas combinado con los ingredientes que nos recuerdan al sabor único del mazapán. Todo esto mezclado con manzana, naranja, almendra tostada y el intenso sabor de las especias de oriente como la canela y el clavo. Una mezcla sin teína, naturalmente dulce para los días fríos de invierno. La versión sin teína del sabor típico navideño. Con leche y azúcar nos lleva directamente al mazapán.",
@@ -997,6 +1025,7 @@ let teas = [{
         "categoria": "Infusión",
         "descripcion": "Infusión de manzana al estilo de los bazares de Estambul",
 
+        "unidadesVendidas": 0,
         "name": "Infusión apple temtation",
         "longDescription": [
             "Infusión de manzana natural, con manzana, partes de la manzana y ácido cítrico.",
@@ -1040,6 +1069,7 @@ let teas = [{
         "categoria": "Infusión",
         "descripcion": "Tu momento de relax llega con Calm moment",
 
+        "unidadesVendidas": 0,
         "name": "Infusión calm moment",
         "longDescription": [
             "Tu momento de relax llega con Calm Moment, una tila con melisa y una envolvente presencia de miel. aromas que te transportarán a una nueva dimensión de relax. Versión moderna de la tradicional tila con melisa, anís y aroma de miel.",
@@ -1083,6 +1113,7 @@ let teas = [{
         "categoria": "Infusión",
         "descripcion": "Tónica y digestiva tisana de canela,trocitos de manzana y manzanilla",
 
+        "unidadesVendidas": 0,
         "name": "Infusión camomilla golden",
         "longDescription": [
             "Tónica y digestiva tisana de canela, trocitos de manzana y manzanilla. Sorprende su parecido con el tradicional sabor de las manzanas asadas.",
@@ -1122,6 +1153,7 @@ let teas = [{
         "categoria": "Infusión",
         "descripcion": "Los sabores del trópico en tu taza",
 
+        "unidadesVendidas": 0,
         "name": "Infusión cocktail de frutas",
         "longDescription": [
             "Los sabores del trópico, hibisco, rosa mosqueta, trozos de piña y papaya, pasas y corteza de naranja, en tu taza.",
@@ -1161,6 +1193,7 @@ let teas = [{
         "categoria": "Infusión",
         "descripcion": "Infusión de cáscara de cacao,jengibre y naranja",
 
+        "unidadesVendidas": 0,
         "name": "Infusión cocoa orange",
         "longDescription": [
             "Infusíon de cáscara de cacao,jengibre y naranja",
@@ -1200,6 +1233,7 @@ let teas = [{
         "categoria": "Infusión",
         "descripcion": "Infusión de bayas de goji,hibisco,pepitas de granada y arándanos",
 
+        "unidadesVendidas": 0,
         "name": "Infusión goji secrets",
         "longDescription": [
             "Infusión de bayas de goji, hibisco, pepitas de granada y arándanos.",
@@ -1239,6 +1273,7 @@ let teas = [{
         "categoria": "Infusión",
         "descripcion": "Disfruta de todo el sabor del regaliz negro con esta delicada infusión de especias",
 
+        "unidadesVendidas": 0,
         "name": "Infusión herbal spirit",
         "longDescription": [
             "Disfruta de todo el sabor del regaliz negro con esta delicada infusión de especias, cítricos y menta. Una digestiva infusión a base de regaliz, menta, especias y elementos cítricos. El regaliz le aporta un toque especial redondeando el sabor de la infusión y dotándola de un carácter fresco que combina a las perfección con la menta. El resultado es una infusión con personalidad propia gracias a la presencia en boca de este regaliz negro.",
@@ -1279,6 +1314,7 @@ let teas = [{
         "categoria": "Infusión",
         "descripcion": "Infusión muy energética de corteza de naranja,hinojo y canela",
 
+        "unidadesVendidas": 0,
         "name": "Infusión indian secret",
         "longDescription": [
             "Corteza de naranja, hinojo, trocitos de canela, raíz de regaliz, enebro, clavo, cardamomo, jengibre y pimienta verde en grano hacen de ésta una infusión muy enérgica, ideal para tomar por la tarde.",
@@ -1319,6 +1355,7 @@ let teas = [{
         "categoria": "Infusión",
         "descripcion": "Mezcla yogui que se usa originalmente para recuperar el \"espíritu\" tras una sesión",
 
+        "unidadesVendidas": 0,
         "name": "Infusión indian yogi",
         "longDescription": [
             "Canela orgánica, jengibre, clavo y semillas de cardamomo son los ingredientes de esta mezcla YOGI usada originalmente para recuperar el \"espíritu\" tras una sesión de Yoga. Tonificante y digestiva, se puede infusionar con leche sea vegetal como animal.",
@@ -1359,6 +1396,7 @@ let teas = [{
         "categoria": "Infusión",
         "descripcion": "Infusión con el más fresco sabor del bosque",
 
+        "unidadesVendidas": 0,
         "name": "Infusión magic forest",
         "longDescription": [
             "Infusión caprichosa con el más fresco sabor del bosque: menta, hojas de zarzamora, hojas de frambuesa, mora, frambuesa, manzana, flor de hibisco, piel de alubia, manzanilla y flores de girasól.",
@@ -1394,9 +1432,25 @@ let teas = [{
         "basePrice": 8.50,
     },
 ]
+const dotenv = require('dotenv');
+dotenv.config();
 
-let tes = teas.map(function(te) {
-    return new Tea(te);
-});
-console.log(tes);
-Tea.insertMany(tes);
+const mongoose = require('mongoose');
+const Tea = require('./models/Tea');
+
+
+(async function() {
+    let password = process.env.PASSWORD;
+    console.log(`el password es ${password}`)
+
+    mongoose.connect(`mongodb+srv://amaiaaretxalde:${password}@cluster0-ojbh1.mongodb.net/teashop?retryWrites=true&w=majority`);
+
+    let tes = teas.map(function(te) {
+        te.unidadesVendidas = 0;
+        return new Tea(te);
+    });
+
+    console.log(tes);
+    await Tea.insertMany(tes);
+    process.exit()
+})()

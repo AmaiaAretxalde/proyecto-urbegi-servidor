@@ -5,46 +5,53 @@ const User = require('./models/User');
 const nodemailer = require('nodemailer');
 
 // PARA AÑADIR A LA CESTA
-router.post('/', async function (req, res) {
+router.post('', async function(req, res) {
     if (req.isAuthenticated() === false) {
         return res.send({ mensaje: 'No estás logueado', logged: false });
     } else {
+        console.log(req.body);
         let producto = req.body.producto;
         let id = producto.id;
         let unidades = req.body.unidades;
         let cestaExistente = req.user.cesta;
-        const user = req.user;
         console.log(cestaExistente)
-        let posicion = cestaExistente.findIndex(function (element) {
+        const user = req.user;
+        console.log(user)
+        let posicion = cestaExistente.findIndex(function(element) {
             console.log(element.producto.id)
             console.log(id)
             return element.producto.id === id;
         });
+        console.log('posicion:' + posicion);
         if (posicion === undefined || posicion === (-1)) {
             cestaExistente.push({ producto, unidades });
             user.markModified('cesta');
             user.save();
             res.send({ mensaje: 'añadido a la cesta', logged: true, cestaExistente });
         } else {
+            productoEnCesta = cestaExistente[posicion]
+            console.log(productoEnCesta);
+            if (isNaN(productoEnCesta.unidades)) {
+                cestaExistente[posicion].unidades = 0;
+            }
             cestaExistente[posicion].unidades += unidades;
             user.markModified('cesta');
             user.save();
             res.send({ mensaje: 'añadido a la cesta', logged: true, cestaExistente });
         };
     }
-}
-);
+});
 
 
 //ELIMINAR PRODUCTO DE CESTA
-router.delete('/:id', async function (req, res) {
+router.delete('/:id', async function(req, res) {
     if (req.isAuthenticated() === false) {
         return res.send({ mensaje: 'No estás logueado', logged: false });
     } else {
         let id = req.params.id;
         const user = req.user;
         let cestaExistente = user.cesta;
-        let posicion = cestaExistente.findIndex(function (element) {
+        let posicion = cestaExistente.findIndex(function(element) {
             console.log(element.producto.id)
             console.log(id)
             return element.producto.id === id;
@@ -61,7 +68,7 @@ router.delete('/:id', async function (req, res) {
 });
 
 //MODIFICAR UNIDADES DE CESTA
-router.put('/', async function (req, res) {
+router.put('/', async function(req, res) {
     let posicion;
 
     if (req.isAuthenticated() === false) {
@@ -71,7 +78,7 @@ router.put('/', async function (req, res) {
         let unidades = req.body.unidades;
         const user = req.user;
         let cestaExistente = user.cesta;
-        posicion = cestaExistente.findIndex(function (element) {
+        posicion = cestaExistente.findIndex(function(element) {
             console.log(element.producto.id)
             console.log(id)
             return element.producto.id === id;
@@ -94,7 +101,7 @@ router.put('/', async function (req, res) {
 
 
 // VER CESTA 
-router.get('/', async function (req, res) {
+router.get('/', async function(req, res) {
 
     const user = req.user
     if (req.isAuthenticated() === false) {
@@ -104,9 +111,41 @@ router.get('/', async function (req, res) {
     };
 });
 
+//añadir unidades vendida a un  te por id 
+async function anyadirTe(id, unidades) {
+    await Tea.findOne({ id: id }, async(err, te) => {
+
+        te.unidadesVendidas = te.unidadesVendidas + unidades
+        await (new Tea(te)).save()
+
+
+    })
+}
+router.put('/tea/:id', async function(req, res) {
+    let id = req.params.id
+    let unidades = req.body.unidades
+
+
+    await Tea.findOne({ id: id }, async(err, te) => {
+        if (err) {
+            res.send({
+                mensaje: '404',
+                exception: err
+            });
+
+        }
+        te.unidadesVendidas = te.unidadesVendidas + unidades
+        await (new Tea(te)).save()
+        res.send(te)
+
+    })
+
+
+
+})
 
 //PASAR DE CESTA A PEDIDO
-router.get('/pedido', async function (req, res) {
+router.get('/pedido', async function(req, res) {
     if (req.isAuthenticated() === false) {
         res.send({ mensaje: 'No estás logueado', logged: false });
     } else {
@@ -118,6 +157,7 @@ router.get('/pedido', async function (req, res) {
                      <p>Unidades: ${user.cesta[i].unidades}</p> 
                      <p>Precio ${user.cesta[i].producto.basePrice}€/ud</p>
                      <hr>`;
+            anyadirTe(user.cesta[i].producto.id, user.cesta[i].unidades)
         }
         user.markModified('pedidos');
         await user.save();
@@ -155,7 +195,7 @@ function enviarMail(nombre, pedido) {
 
     };
 
-    transporter.sendMail(mailOptions, function (error, info) {
+    transporter.sendMail(mailOptions, function(error, info) {
         if (error) {
             console.log(error);
 
@@ -168,7 +208,7 @@ function enviarMail(nombre, pedido) {
 
 //GESTIONAR STOCK
 function gestionarStock(producto, unidades) {
-    Tea.find({ name: producto }, function (err, datos) {
+    Tea.find({ name: producto }, function(err, datos) {
         if (err !== null) {
             console.log({ mensaje: '404' });
             return;
@@ -179,7 +219,7 @@ function gestionarStock(producto, unidades) {
         } else {
             let nuevoStock = datos[0].stock - unidades;
             console.log(nuevoStock)
-            Tea.findOneAndUpdate({ name: producto }, { stock: nuevoStock }, function (err, datos) {
+            Tea.findOneAndUpdate({ name: producto }, { stock: nuevoStock }, function(err, datos) {
                 if (err !== null) {
                     console.log({ mensaje: '404' });
                     return;

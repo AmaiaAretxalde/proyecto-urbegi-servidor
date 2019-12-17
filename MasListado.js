@@ -3,6 +3,7 @@ let teas = [{
         "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007//27022_TilaGarden_1000X1000_l.jpg",
         "categoria": "Infusión",
         "descripcion": "Infusión de Tila,menta piperita y cáscara de limón",
+        "unidadesVendidas": 0,
         "name": "Infusión tila garden",
         "longDescription": [
             "Infusión de Tila, menta piperita y cáscara de limón.",
@@ -38,6 +39,7 @@ let teas = [{
         "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007/fotosProducto/tes/27010_ValerianaGarden_1000x1000_l.jpg",
         "categoria": "Infusión",
         "descripcion": "Infusión de zarzamora,escaramujo,valeriana y flores de azahar",
+        "unidadesVendidas": 0,
         "name": "Infusión valeriana garden",
         "longDescription": [
             "Flores y frutas en una fragante infusión de corteza de naranja, hojas de zarzamora, hojas de mora, corteza de escaramujo silvestre, valeriana, trocitos de manzana, flores de azahar, de aciano y de girasol.",
@@ -71,6 +73,7 @@ let teas = [{
         "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007/fotosProducto/tes/28006_WildPeach_1000x1000_l.jpg",
         "categoria": "Infusión",
         "descripcion": "Infusión rica en antioxidantes: melocotón,escaramujo y manzana",
+        "unidadesVendidas": 0,
         "name": "Infusión wild peach",
         "longDescription": [
             "Infusión aterciopelada, rica en antioxidantes. El melocotón de pulpa blanca junto al escaramujo hacen que esta infusión sea dulce, con un toque ácido.",
@@ -105,6 +108,7 @@ let teas = [{
         "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007//29114_African_Sunset_1000X1000_l-2.jpg",
         "categoria": "Infusión",
         "descripcion": "Blend sano y natural de rooibos,láminas de zanahoria y cáscara de naranja",
+        "unidadesVendidas": 0,
         "name": "Rooibos african sunset",
         "longDescription": [
             "Sano y natural, el rooibos es una bebida sin teína y rica en minerales como hierro, potasio, calcio o magnesio. Maravilloso anti-stress, perfecto con leche vegetal, su sabor es intenso y dulce. Este blend de sabor cítrico lleva láminas de zanahoria para un toque aún más vitamínico. Sin casi calorias, se aconseja a todos los que practican deportes por su alto contenido de minerales. Una mezcla que solo encontrarás en Ure.",
@@ -139,6 +143,7 @@ let teas = [{
         "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007/fotosProducto/tes/29101_RooibosCanela_1000x1000_l.jpg",
         "categoria": "Infusión",
         "descripcion": "Rooibos con canela,una infusión con sabor intenso",
+        "unidadesVendidas": 0,
         "name": "Rooibos canela",
         "longDescription": [
             " Las notas orientales de los trocitos de canela potencian el Rooibos, que resulta en una infusión de sabor intenso.",
@@ -172,6 +177,7 @@ let teas = [{
         "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007/fotosProducto/tes/29111_RooibosChai_1000x1000_l.jpg",
         "categoria": "Infusión",
         "descripcion": "Una mezcla tonificante e isotónica compuesta por una base de Rooibos",
+        "unidadesVendidas": 0,
         "name": "Rooibos chai",
         "longDescription": [
             "Mezcla tonificante e isotónica compuesta por una base de Rooibos y especias al perfecto estilo hindú. Sin teína, esta mezcla chai es especialmente buena infusionada directamente con leche de avena para tomarse tanto en frio como en caliente. Sus ingredientes naturales se aprecian tanto por sus beneficios para la salud como por sus propiedades calmantes.",
@@ -206,6 +212,7 @@ let teas = [{
         "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007//29107_RooibosGraciaBlend_1000x1000_l.jpg",
         "categoria": "Infusión",
         "descripcion": "Una mezcla que combina el sabor afrutado de Rooibos africano",
+        "unidadesVendidas": 0,
         "name": "Rooibos gracia blend",
         "longDescription": [
             "Una mezcla redonda que combina el sabor afrutado de Rooibos africano, una infusión altamente mineralizante sin aporte de teína, con la caricia de la vainilla, la corteza de naranja, los pétalos de rosa, de aciano y de girasol",
@@ -240,6 +247,7 @@ let teas = [{
         "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007/fotosProducto/tes/29113_RooibosLaProvence_1000x1000_l.jpg",
         "categoria": "Infusión",
         "descripcion": "Relajante y deliciosa mezcla sin teina de rooibos,lavanda y grosella negra",
+        "unidadesVendidas": 0,
         "name": "Rooibos la provence",
         "longDescription": [
             "Una deliciosa mezcla exclusiva Tea Shop que une el dulzor del Rooibos con el sabor afrutado de la grosella negra y la delicadeza herbal y perfumada de la lavanda. Su sugerente aroma nos hace relajar y nos aporta todos los beneficios del rooibos: sin teína, con vitaminas y con muchos minerales.",
@@ -274,6 +282,7 @@ let teas = [{
         "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007/fotosProducto/tes/29112_RooibosLemonPie_1000x1000_l.jpg",
         "categoria": "Infusión",
         "descripcion": "Tu postre ideal sin calorias",
+        "unidadesVendidas": 0,
         "name": "Rooibos lemon pie",
         "longDescription": [
             "Una deliciosa mezcla exclusiva Tea Shop que une el dulzor del Rooibos con el sabor afrutado de la grosella negra y la delicadeza herbal y perfumada de la lavanda. Su sugerente aroma nos hace relajar y nos aporta todos los beneficios del rooibos: sin teína, con vitaminas y con muchos minerales.",
@@ -308,6 +317,7 @@ let teas = [{
         "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007/fotosProducto/tes/29001_RooibosOriginal_1000x1000_l.jpg",
         "categoria": "Infusión",
         "descripcion": "Infusión originaria de Sudáfrica rica en minerales esenciales",
+        "unidadesVendidas": 0,
         "name": "Rooibos orignal",
         "longDescription": [
             "Es una infusión originaria de Sudáfrica, que además de tener un delicado sabor, es muy rica en minerales esenciales: calcio, hierro, flúor, potasio y magnesio.",
@@ -341,6 +351,7 @@ let teas = [{
         "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007/fotosProducto/tes/29103_RooibosParadise_1000x1000_l.jpg",
         "categoria": "Infusión",
         "descripcion": "Rooibos aromatizado con trocitos de coco y frambuesa.",
+        "unidadesVendidas": 0,
         "name": "Rooibos Paradise",
         "longDescription": [
             "Tan sorprendente como la Sabana africana. Un Rooibos aromatizado con trocitos de coco y frambuesa, corteza de naranja, polen de miel, hojas de zarzamora y cabezuela, cuyo sabor te transportará al continente negro.",
@@ -374,6 +385,7 @@ let teas = [{
         "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007/fotosProducto/tes/29102_RooibosSafari_1000x1000_l.jpg",
         "categoria": "Infusión",
         "descripcion": "Rooibos aromatizado con ralladura de coco y pedacitos de chocolate",
+        "unidadesVendidas": 0,
         "name": "Rooibos Paradise",
         "longDescription": [
             "Rooibos aromatizado con ralladura de coco y pedacitos de chocolate. Infusión dulce y saludable donde lo blanco y lo negro se entremezclan; símbolo de la nueva Sudáfrica.",
@@ -408,6 +420,7 @@ let teas = [{
         "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007/fotosProducto/tes/29106_RooibosVanilla_1000x1000_l.jpg",
         "categoria": "Infusión",
         "descripcion": "Rooibos fermentado,aromatizado,trocitos de vainilla",
+        "unidadesVendidas": 0,
         "name": "Rooibos Vainilla",
         "longDescription": [
             "Rooibos fermentado aromatizado con trocitos de vainilla. Infusión dulce, con mucho cuerpo y de sabor intenso.",
@@ -441,6 +454,7 @@ let teas = [{
         "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007/fotosProducto/tes/29102_RooibosSafari_1000x1000_l.jpg",
         "categoria": "Té negro",
         "descripcion": "Té negro aromatizado con solo un 5% de teína",
+        "unidadesVendidas": 0,
         "name": "Té canela decaf",
         "longDescription": [
             "Té Negro aromatizado con trocitos y aroma de canela, y con sólo un 5% de teína.",
@@ -474,6 +488,7 @@ let teas = [{
         "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007//15104_CeylonDecaf_1000X1000_l-.jpg",
         "categoria": "Té negro",
         "descripcion": "Té negro desteinado procedente de Sri Lanka",
+        "unidadesVendidas": 0,
         "name": "Ceylon decaf",
         "longDescription": [
             "Té Negro procedente de Sri Lanka, sometido al proceso de desteinado, y con muy bajo contenido en teína.",
@@ -506,6 +521,7 @@ let teas = [{
         "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007//15104_CeylonDecaf_1000X1000_l-.jpg",
         "categoria": "Té negro",
         "descripcion": "Earl grey tradicional,pero con un bajo contenido en teina",
+        "unidadesVendidas": 0,
         "name": "Earl grey decaf",
         "longDescription": [
             "Es el Earl Grey tradicional, aromatizado con aroma natural de bergamota, pero con un bajo contenido en teína.",
@@ -538,6 +554,7 @@ let teas = [{
         "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007//15104_CeylonDecaf_1000X1000_l-.jpg",
         "categoria": "Infusión",
         "descripcion": "Misteriosa y dulce infusión con calabaza",
+        "unidadesVendidas": 0,
         "name": "Infusión happy pumpkin",
         "longDescription": [
             "Manzana, piña confitada, algarroba, zanahoria, Rooibos, canela, cáscara de escaramujo, trozos de calabaza, semillas de calabaza, cítricos, cáscara de cítricos, trozos de ciruela, pétalos de girasol.",
@@ -570,6 +587,7 @@ let teas = [{
         "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007/fotosProducto/tes/14005_GraciaWhiteBlend_1000x1000_l.jpg",
         "categoria": "Té blanco",
         "descripcion": "El té de la belleza aromatizado con vainilla,corteza de naranja y pétalos de rosas.",
+        "unidadesVendidas": 0,
         "name": "Té blanco gracia blend white",
         "longDescription": [
             "El té de la belleza (Pai Mu Tan), ligero y aterciopelado en la boca, es el Gracia Blend en su expresión aromática más elegante. Aromatizado con vainilla, corteza de naranja, pétalos de rosas, de aciano y de girasol. Por su armonioso equilibrio entre flores y frutas, es ideal en primavera, acompañando la explosión de color de esta época del año.",
@@ -603,6 +621,7 @@ let teas = [{
         "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007/fotosProducto/tes/14001_PaiMuTan_1000x1000_l.jpg",
         "categoria": "Té blanco",
         "descripcion": "También conocido como Balmudan o Peonía Blanca,es un té de alta calidad",
+        "unidadesVendidas": 0,
         "name": "Té blanco pai mu tan",
         "longDescription": [
             " También conocido como Balmudan o Peonía Blanca, crece en las montañas de Fujian y es un té de alta calidad. Su infusión es ocre, de aroma fresco y gusto aterciopelado. Digestivo y perfecto para convertir en placentera una tarde cualquiera.",
@@ -636,6 +655,7 @@ let teas = [{
         "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007//14017_SakuraBautyBlend_1000X1000_l.jpg",
         "categoria": "Té blanco",
         "descripcion": "Té Blanco y Té Verde con cereza Morello Té Matcha y botones de rosa",
+        "unidadesVendidas": 0,
         "name": "Té blanco sakura beauty blend",
         "longDescription": [
             "Té Blanco y Té Verde con cereza Morello, Té Matcha y botones de rosa.",
@@ -670,6 +690,7 @@ let teas = [{
         "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007//TM_Silver-Needles_1000x1000.jpg",
         "categoria": "Té blanco",
         "descripcion": "Té Blanco compuesto solo por brotes tiernos sin abrir",
+        "unidadesVendidas": 0,
         "name": "Té blanco silver needles (bai hao yin zhen)",
         "longDescription": [
             "Té Blanco compuesto sólo por brotes tiernos sin abrir cubiertos por un delicado vello blanco. Su proceso de fabricación es completamente artesanal. Este té se ha convertido en pocos años en uno de los más buscados y apreciados por los conocedores por su aroma floral y su textura, sedosa y aterciopelada.",
@@ -704,6 +725,7 @@ let teas = [{
         "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007/fotosProducto/tes/14013_StrawberryFresh_1000x1000_l.jpg",
         "categoria": "Té blanco",
         "descripcion": "Mezcla de té blanco con un delicioso toque a fresa y albahaca",
+        "unidadesVendidas": 0,
         "name": "Té blanco strawberry fresh",
         "longDescription": [
             " Increíble té blanco con toques de fresa y albahaca, que acompañará tanto tus noches más frías de invierno, como tus más soleados días de verano.",
@@ -737,6 +759,7 @@ let teas = [{
         "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007//14003_WhiteKiss_1000x1000_l.jpg",
         "categoria": "Té blanco",
         "descripcion": "Té blanco Pai Mu Tan con fresa",
+        "unidadesVendidas": 0,
         "name": "Té blanco white kiss",
         "longDescription": [
             " Se trata de un Té Blanco de base Pai Mu de alta calidad y aromatizado con fresas caramelizadas. De infusión dorada, con un aroma dulzón y afrutado y cuerpo sedoso, este té hará seguro las delicias de los incondicionales del Té Blanco en busca de una versión aromatizada. Ideal también para los amantes del té aromatizado dulce.",
@@ -770,6 +793,7 @@ let teas = [{
         "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007//14003_WhiteKiss_1000x1000_l.jpg",
         "categoria": "Té negro",
         "descripcion": "Té negro assam tonganagaon,de cultivo sostenible.",
+        "unidadesVendidas": 0,
         "name": "Té negro assam tonganagaon fairtrade nop / ftgf0p1",
         "longDescription": [
             " Té Negro, energizante, procedente del valle de té Tonganagaon situado en India. Uno de los factores que influyen en la calidad de los Tés de Tonganagaon es su gran terreno de más de 100 hectáreas con plantas de té de la mejor calidad, como la famosa P126.Té fino en boca por su proporción de brotes, es de primerísima calidad (FTGFOP1) y de estructura delicada. Resulta ligeramente perfumado con un perfecto equilibrio entre amargor y astringencia. Assam se caracteriza por su gran aporte de teína siendo ideal para saborearlo por la mañana.Este té es más suave que el Assam Maud. Como todos los tés de esta zona, se caracteriza por su sabor malteado y su riqueza de taninos.",
@@ -800,9 +824,27 @@ let teas = [{
         "basePrice": 9.10,
     },
 ]
+const dotenv = require('dotenv');
+dotenv.config();
 
-let tes = teas.map(function(te) {
-    return new Tea(te);
-});
-console.log(tes);
-Tea.insertMany(tes);
+const mongoose = require('mongoose');
+const Tea = require('./models/Tea');
+
+
+
+(async function() {
+    let password = process.env.PASSWORD;
+    console.log(`el password es ${password}`)
+
+    mongoose.connect(`mongodb+srv://amaiaaretxalde:${password}@cluster0-ojbh1.mongodb.net/teashop?retryWrites=true&w=majority`);
+
+
+    let tes = teas.map(function(te) {
+        te.unidadesVendidas = 0;
+        return new Tea(te);
+    });
+
+    console.log(tes);
+    await Tea.insertMany(tes);
+    process.exit()
+})()

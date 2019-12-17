@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 const express = require('express');
 const app = express();
 const bcrypt = require('bcrypt');
@@ -6,9 +8,9 @@ const Tea = require('./models/Tea');
 const User = require('./models/User');
 const Tipo = require('./models/Tipo');
 
-require('dotenv').config();
 
 let password = process.env.PASSWORD;
+console.log(`el password es ${password}`)
 
 mongoose.connect(`mongodb+srv://amaiaaretxalde:${password}@cluster0-ojbh1.mongodb.net/teashop?retryWrites=true&w=majority`);
 
