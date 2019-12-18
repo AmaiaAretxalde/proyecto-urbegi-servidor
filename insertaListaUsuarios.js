@@ -676,35 +676,35 @@ const bcrypt = require('bcrypt');
 
             "pedidos": [],
         },
-        {
-            "nombre": "Rosa",
-            "apellido": "Bayona",
-            "email": "rosa.bayona@gmail.com",
-            "direccion": "Calle las Viñas 3,5A",
-            "localidad": "Santurtzi",
-            "provincia": "Bizkaia",
-            "cp": 48980,
-            "telefono": 681231111,
-            "sabores": [{ "nombre": "dulce", "puntuacion": 4 },
-                { "nombre": "citrico", "puntuacion": 3 },
-                { "nombre": "floral", "puntuacion": 1 },
-                { "nombre": "especiado", "puntuacion": 1 },
-                { "nombre": "afrutado", "puntuacion": 2 }
-            ],
+        /*{
+                "nombre": "Rosa",
+                "apellido": "Bayona",
+                "email": "rosa.bayona@gmail.com",
+                "direccion": "Calle las Viñas 3,5A",
+                "localidad": "Santurtzi",
+                "provincia": "Bizkaia",
+                "cp": 48980,
+                "telefono": 681231111,
+                "sabores": [{ "nombre": "dulce", "puntuacion": 4 },
+                    { "nombre": "citrico", "puntuacion": 3 },
+                    { "nombre": "floral", "puntuacion": 1 },
+                    { "nombre": "especiado", "puntuacion": 1 },
+                    { "nombre": "afrutado", "puntuacion": 2 }
+                ],
 
 
-            "funciones": [{ "nombre": "estimulante", "puntuacion": 2 },
-                { "nombre": "digestivo", "puntuacion": 3 },
-                { "nombre": "relajante", "puntuacion": 2 },
-                { "nombre": "antioxidante", "puntuacion": 5 },
-                { "nombre": "isotonico", "puntuacion": 4 },
-                { "nombre": "depurativo", "puntuacion": 5 }
-            ],
-            "cesta": [],
-            "isAdmin": false,
+                "funciones": [{ "nombre": "estimulante", "puntuacion": 2 },
+                    { "nombre": "digestivo", "puntuacion": 3 },
+                    { "nombre": "relajante", "puntuacion": 2 },
+                    { "nombre": "antioxidante", "puntuacion": 5 },
+                    { "nombre": "isotonico", "puntuacion": 4 },
+                    { "nombre": "depurativo", "puntuacion": 5 }
+                ],
+                "cesta": [],
+                "isAdmin": false,
 
-            "pedidos": [],
-        },
+                "pedidos": [],
+            },*/
     ]
     let users = usuarios.map(function(us) {
         us.password = bcrypt.hashSync(us.nombre, 10);
