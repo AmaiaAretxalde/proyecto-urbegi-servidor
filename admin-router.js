@@ -51,7 +51,6 @@ router.post('/tea', async function(req, res) {
 
     tea.stock = elTe.stock
     tea.basePrice = elTe.basePrice;
-
     // tea.basePrice = req.body.basePrice
 
 
