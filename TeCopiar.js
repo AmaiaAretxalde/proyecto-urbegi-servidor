@@ -1,5 +1,5 @@
 let teas = [{
-    "id": "1",
+    "id": "68",
     "mainImage": "https://dhb3yazwboecu.cloudfront.net/1007/fotosProducto/tes/10153_BerryFields_1000x1000_l.jpg",
     "categoria": "Té negro",
     "descripcion": "Té negro,frutas del bosque,remolacha y manzana",
